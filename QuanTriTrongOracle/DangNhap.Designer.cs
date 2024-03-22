@@ -1,6 +1,6 @@
 ﻿namespace QuanTriTrongOracle
 {
-    partial class Form1
+    partial class DangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -98,6 +98,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Thoát";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // signInButton
             // 
@@ -109,7 +110,7 @@
             this.signInButton.UseVisualStyleBackColor = true;
             this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
-            // Form1
+            // DangNhap
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(768, 465);
@@ -120,7 +121,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "DangNhap";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

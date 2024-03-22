@@ -95,16 +95,63 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="connect.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="NavForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="NavForm.Designer.cs">
+      <DependentUpon>NavForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationButton.cs" />
+    <Compile Include="NavigationControl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Tab\DetailUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tab\DetailUser.Designer.cs">
+      <DependentUpon>DetailUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab\EditUserRole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tab\EditUserRole.Designer.cs">
+      <DependentUpon>EditUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab\PhanQuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tab\PhanQuyen.Designer.cs">
+      <DependentUpon>PhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab\ThuHoiQuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tab\ThuHoiQuyen.Designer.cs">
+      <DependentUpon>ThuHoiQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab\XemPriv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tab\XemPriv.Designer.cs">
+      <DependentUpon>XemPriv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab\XemUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tab\XemUser.Designer.cs">
+      <DependentUpon>XemUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="NavForm.resx">
+      <DependentUpon>NavForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,6 +162,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tab\DetailUser.resx">
+      <DependentUpon>DetailUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tab\EditUserRole.resx">
+      <DependentUpon>EditUserRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tab\PhanQuyen.resx">
+      <DependentUpon>PhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tab\ThuHoiQuyen.resx">
+      <DependentUpon>ThuHoiQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tab\XemPriv.resx">
+      <DependentUpon>XemPriv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tab\XemUser.resx">
+      <DependentUpon>XemUser.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
