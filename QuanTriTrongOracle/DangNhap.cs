@@ -59,7 +59,7 @@ namespace QuanTriTrongOracle
         private void signInButton_Click(object sender, EventArgs e)
         {
             conn.setConnect(username.Text, password.Text);
-            OracleConnection con = new OracleConnection(conn.getString());
+            OracleConnection con = new OracleConnection(new connect().getString());
             try
             {
                 con.Open();
