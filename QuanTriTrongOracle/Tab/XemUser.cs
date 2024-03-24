@@ -24,6 +24,8 @@ namespace QuanTriTrongOracle.Tab
             con.Open();
             // Load dữ liệu từ Oracle vào DataGridView
             LoadData();
+            // Thiết lập auto size cho các cột trong DataGridView
+            SetupDataGridViewColumns();
             // Đóng kết nối sau khi đã sử dụng xong
             con.Close();
         }
@@ -57,6 +59,17 @@ namespace QuanTriTrongOracle.Tab
             }
         }
 
+        // Fill content bằng khung chứa nó
+        private void SetupDataGridViewColumns()
+        {
+            // Thiết lập AutoSizeColumnsMode của DataGridView là Fill
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
+            // Thiết lập AutoSizeMode của từng cột là Fill
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+        }
     }
 }
