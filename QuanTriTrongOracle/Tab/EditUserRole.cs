@@ -45,6 +45,10 @@ namespace QuanTriTrongOracle.Tab
                 createuser_name.ResetText();
                 createuser_pass.ResetText();
                 MessageBox.Show("Tạo User thành công");
+                username_comboBoxLoad();
+                Role_comboBoxLoad();
+                edt_usr_comboBoxLoad();
+                edt_role_comboBoxLoad();
             }
             else
             {
@@ -80,13 +84,18 @@ namespace QuanTriTrongOracle.Tab
                 role_username_create.ResetText();
                 role_password_create.ResetText();
                 cmd.ExecuteNonQuery();
-                con.Close();
+                
                 MessageBox.Show("Tạo role thành công!");
+                username_comboBoxLoad();
+                Role_comboBoxLoad();
+                edt_usr_comboBoxLoad();
+                edt_role_comboBoxLoad();
             }
             else
             {
                 MessageBox.Show("Để tạo role không được để tên role trống!");
             }
+            con.Close();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -129,7 +138,7 @@ namespace QuanTriTrongOracle.Tab
         private void username_comboBoxLoad()
         {
             OracleConnection con = new OracleConnection(new connect().getString());
-            OracleCommand cmd = new OracleCommand("SELECT USERNAME FROM ALL_USERS", con);
+            OracleCommand cmd = new OracleCommand("select username from dba_users where created > (select created + interval '30' minute from v$database) order by 1", con);
             con.Open();
             cmd.ExecuteNonQuery();
             OracleDataReader dr = cmd.ExecuteReader();
@@ -159,7 +168,7 @@ namespace QuanTriTrongOracle.Tab
         private void edt_usr_comboBoxLoad()
         {
             OracleConnection con = new OracleConnection(new connect().getString());
-            OracleCommand cmd = new OracleCommand("SELECT USERNAME FROM ALL_USERS", con);
+            OracleCommand cmd = new OracleCommand("select username from dba_users where created > (select created + interval '30' minute from v$database) order by 1", con);
             con.Open();
             cmd.ExecuteNonQuery();
             OracleDataReader dr = cmd.ExecuteReader();
