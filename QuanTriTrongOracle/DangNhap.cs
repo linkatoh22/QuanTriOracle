@@ -61,9 +61,10 @@ namespace QuanTriTrongOracle
 
         private void signInButton_Click(object sender, EventArgs e)
         {
-            string ph = cb_ph.SelectedItem.ToString();
-            if (ph != null)
+            
+            if (cb_ph.SelectedItem != null)
             {
+                string ph = cb_ph.SelectedItem.ToString();
                 if (ph == "PH1")
                 {
                     connect conn = new connect();
