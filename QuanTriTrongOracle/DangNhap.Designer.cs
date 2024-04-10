@@ -35,6 +35,8 @@
             this.password = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.signInButton = new System.Windows.Forms.Button();
+            this.cb_ph = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -92,7 +94,7 @@
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(198, 346);
+            this.button1.Location = new System.Drawing.Point(198, 360);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 36);
             this.button1.TabIndex = 5;
@@ -102,7 +104,7 @@
             // 
             // signInButton
             // 
-            this.signInButton.Location = new System.Drawing.Point(427, 346);
+            this.signInButton.Location = new System.Drawing.Point(426, 360);
             this.signInButton.Name = "signInButton";
             this.signInButton.Size = new System.Drawing.Size(174, 35);
             this.signInButton.TabIndex = 6;
@@ -110,10 +112,28 @@
             this.signInButton.UseVisualStyleBackColor = true;
             this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
+            // cb_ph
+            // 
+            this.cb_ph.FormattingEnabled = true;
+            this.cb_ph.Location = new System.Drawing.Point(304, 292);
+            this.cb_ph.Name = "cb_ph";
+            this.cb_ph.Size = new System.Drawing.Size(142, 21);
+            this.cb_ph.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(211, 298);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.TabIndex = 8;
+            // 
             // DangNhap
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(768, 465);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cb_ph);
             this.Controls.Add(this.signInButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.password);
@@ -137,6 +157,8 @@
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button signInButton;
+        private System.Windows.Forms.ComboBox cb_ph;
+        private System.Windows.Forms.Label label4;
     }
 }
 

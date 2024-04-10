@@ -44,7 +44,7 @@ namespace QuanTriTrongOracle.Tab
             cb_priv_ptr.Items.Add("DELETE");
 
 
-            
+
 
         }
         private void cbUserRtu_Load()
@@ -107,12 +107,12 @@ namespace QuanTriTrongOracle.Tab
             }
             con.Close();
         }
-         
+
         private void cbCollPtu_Load()
         {
             OracleConnection con = new OracleConnection(new connect().getString());
             OracleCommand cmd = new OracleCommand("SELECT COLUMN_NAME " +
-                "FROM USER_TAB_COLUMNS WHERE table_name ='" + table_ptu+"'", con);
+                "FROM USER_TAB_COLUMNS WHERE table_name ='" + table_ptu + "'", con);
             Console.WriteLine(table_ptu);
             con.Open();
             cmd.ExecuteNonQuery();
@@ -137,7 +137,7 @@ namespace QuanTriTrongOracle.Tab
 
         private void btn_find_ptu_Click(object sender, EventArgs e)
         {
-            
+
             OracleConnection con = new OracleConnection(new connect().getString());
             OracleCommand cmd = new OracleCommand("FIND_TABLE", con);
             con.Open();
@@ -145,7 +145,7 @@ namespace QuanTriTrongOracle.Tab
             cmd.Parameters.Add("TABLENAME", "varchar2").Value = (txtbox_ptu.Text).ToUpper();
             cmd.Parameters.Add("THONGBAO", OracleDbType.Varchar2, 4000, null, ParameterDirection.Output);
 
-            if (txtbox_ptu.Text != "" )
+            if (txtbox_ptu.Text != "")
             {
                 cmd.ExecuteNonQuery();
                 string outParamValue = cmd.Parameters["THONGBAO"].Value.ToString();
@@ -160,14 +160,14 @@ namespace QuanTriTrongOracle.Tab
                 {
                     MessageBox.Show("Bảng không tông tại");
                     con.Close();
-                }    
+                }
             }
             else
             {
                 MessageBox.Show("Không được để ô table trống khi tìm bảng");
-                con.Close() ;
+                con.Close();
             }
-            
+
         }
 
         private void cb_priv_ptr_SelectedIndexChanged(object sender, EventArgs e)
@@ -182,8 +182,8 @@ namespace QuanTriTrongOracle.Tab
             con.Open();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("ROLE_USR", "varchar2").Value = cb_role_rtu.SelectedItem.ToString();
-            cmd.Parameters.Add("USERNAME_USR", "varchar2").Value =cb_user_rtu.SelectedItem.ToString();
-            
+            cmd.Parameters.Add("USERNAME_USR", "varchar2").Value = cb_user_rtu.SelectedItem.ToString();
+
             if (cb_role_rtu.SelectedItem.ToString() != "" && cb_role_rtu.SelectedItem.ToString() != "")
             {
                 cmd.ExecuteNonQuery();
@@ -199,10 +199,10 @@ namespace QuanTriTrongOracle.Tab
 
         private void btn_ptu_Click(object sender, EventArgs e)
         {
-            
+
             string username = cb_user_ptu.SelectedItem.ToString();
             string priv = cb_priv_ptu.SelectedItem.ToString();
-            string table= (txtbox_ptu.Text).ToUpper();
+            string table = (txtbox_ptu.Text).ToUpper();
             string coll;
             if (cb_coll_ptu.SelectedItem == null)
             {
@@ -221,8 +221,8 @@ namespace QuanTriTrongOracle.Tab
             {
                 grant_op = "FALSE1";
             }
-            Console.WriteLine("GRAND_OP "+grant_op);
-            Console.WriteLine("COL "+coll);
+            Console.WriteLine("GRAND_OP " + grant_op);
+            Console.WriteLine("COL " + coll);
             OracleConnection con = new OracleConnection(new connect().getString());
             OracleCommand cmd = new OracleCommand("GRANT_PRIVS_USR", con);
             con.Open();
@@ -232,10 +232,10 @@ namespace QuanTriTrongOracle.Tab
             cmd.Parameters.Add("TABLE_NAME", "varchar2").Value = table;
             cmd.Parameters.Add("GRANT_OPTION", "varchar2").Value = grant_op;
             cmd.Parameters.Add("COLL_USR", "varchar2").Value = coll;
-            if (username!= ""&& priv != ""&& table != "")
+            if (username != "" && priv != "" && table != "")
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Cấp role thành công");
+                MessageBox.Show("Cấp quyền cho user thành công");
             }
             else
             {
@@ -269,7 +269,7 @@ namespace QuanTriTrongOracle.Tab
             if (role != "" && priv != "" && table != "")
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Cấp role thành công");
+                MessageBox.Show("Cấp quyền cho Role thành công");
             }
             else
             {

@@ -13,7 +13,7 @@ namespace QuanTriTrongOracle.Tab
 {
     public partial class EditUserRole : UserControl
     {
-        
+
         public EditUserRole()
         {
             InitializeComponent();
@@ -38,8 +38,8 @@ namespace QuanTriTrongOracle.Tab
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("USERNAME_USR", "varchar2").Value = createuser_name.Text;
             cmd.Parameters.Add("PASSWORD_USR", "varchar2").Value = createuser_pass.Text;
-            
-            if(createuser_pass.Text!=""&&createuser_name.Text!="")
+
+            if (createuser_pass.Text != "" && createuser_name.Text != "")
             {
                 cmd.ExecuteNonQuery();
                 createuser_name.ResetText();
@@ -54,7 +54,7 @@ namespace QuanTriTrongOracle.Tab
             {
                 MessageBox.Show("Để tạo user không được để username hoặc password trống!");
             }
-            
+
             con.Close();
         }
 
@@ -84,7 +84,7 @@ namespace QuanTriTrongOracle.Tab
                 role_username_create.ResetText();
                 role_password_create.ResetText();
                 cmd.ExecuteNonQuery();
-                
+
                 MessageBox.Show("Tạo role thành công!");
                 username_comboBoxLoad();
                 Role_comboBoxLoad();
@@ -101,7 +101,7 @@ namespace QuanTriTrongOracle.Tab
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            
+
         }
 
         private void EditUserRole_Load(object sender, EventArgs e)
@@ -117,13 +117,13 @@ namespace QuanTriTrongOracle.Tab
         private void btn_deleteUser_Click(object sender, EventArgs e)
         {
             String userName = comboBox1.SelectedItem.ToString();
-            if(userName!="")
+            if (userName != "")
             {
                 OracleConnection con = new OracleConnection(new connect().getString());
                 OracleCommand cmd = new OracleCommand("DELETE_USER", con);
-                
+
                 cmd.CommandType = CommandType.StoredProcedure;
-                
+
                 cmd.Parameters.Add("USERNAME_USR", "varchar2").Value = userName;
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -226,7 +226,7 @@ namespace QuanTriTrongOracle.Tab
         private void Upd_User_Click(object sender, EventArgs e)
         {
             String username = edt_usr.SelectedItem.ToString();
-            
+
             if (username != "")
             {
                 OracleConnection con = new OracleConnection(new connect().getString());
@@ -263,7 +263,7 @@ namespace QuanTriTrongOracle.Tab
                 OracleConnection con = new OracleConnection(new connect().getString());
                 OracleCommand cmd = new OracleCommand("UPDATE_ROLE", con);
                 con.Open();
-                
+
                 if (edit_passuser.Text != "")
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
@@ -272,9 +272,9 @@ namespace QuanTriTrongOracle.Tab
                     cmd.ExecuteNonQuery();
                     createuser_name.ResetText();
                     createuser_pass.ResetText();
-                    MessageBox.Show("Chỉnh mật khẩu User thành công");
+                    MessageBox.Show("Chỉnh mật khẩu Role thành công");
                 }
-                
+
                 else
                 {
                     String pass = " ";
@@ -284,7 +284,7 @@ namespace QuanTriTrongOracle.Tab
                     cmd.ExecuteNonQuery();
                     createuser_name.ResetText();
                     createuser_pass.ResetText();
-                    MessageBox.Show("Chỉnh mật khẩu User thành công");
+                    MessageBox.Show("Chỉnh mật khẩu Role thành công");
                 }
 
                 con.Close();

@@ -9,13 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.IO;
+
 
 namespace QuanTriTrongOracle
 {
     public partial class DangNhap : Form
     {
-        OracleConnection con;
-        connect conn = new connect();
+        //OracleConnection con;
+        //connect conn = new connect();
         public DangNhap()
         {
             InitializeComponent();
@@ -28,7 +30,8 @@ namespace QuanTriTrongOracle
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            cb_ph.Items.Add("PH1");
+            cb_ph.Items.Add("PH2");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -58,23 +61,107 @@ namespace QuanTriTrongOracle
 
         private void signInButton_Click(object sender, EventArgs e)
         {
-            conn.setConnect(username.Text, password.Text);
-            OracleConnection con = new OracleConnection(new connect().getString());
-            try
+            string ph = cb_ph.SelectedItem.ToString();
+            if (ph != null)
             {
-                con.Open();
-                con.Close();
-                MessageBox.Show("Đăng nhập thành công.");
-                this.Hide();
-                NavForm nav = new NavForm();
-                this.Hide();
-                nav.Show();
+                if (ph == "PH1")
+                {
+                    connect conn = new connect();
+                    conn.setConnect(username.Text, password.Text, ph);
+                    OracleConnection con = new OracleConnection(new connect().getString());
+                    try
+                    {
+                        con.Open();
+                        con.Close();
+                        MessageBox.Show("Đăng nhập thành công.");
+                        this.Hide();
+                        NavForm nav = new NavForm();
+                        this.Hide();
+                        nav.Show();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        MessageBox.Show("Đăng nhập thất bại");
+                    }
+                }
+                else if (ph == "PH2")
+                {
+                    string Role;
+                    String connect_QLDL = @"DATA SOURCE =localhost:1521/XE; USER ID= ADMIN; PASSWORD=ADMIN";
+                    OracleConnection con = new OracleConnection(connect_QLDL);
+                    con.Open();
+                    string query = "SELECT VAITRO FROM NHANSU WHERE MANV='" + username.Text+"'";
+
+                    OracleCommand cmd = new OracleCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    //OracleDataReader dr = cmd.ExecuteReader();
+                    Role = cmd.ExecuteScalar()?.ToString();
+                    con.Close();
+
+
+                    if (Role!=null)
+                    {
+                        connect conn = new connect();
+                        conn.setConnect(username.Text, password.Text, ph);
+                        OracleConnection con_NV = new OracleConnection(new connect().getString());
+                        try
+                        {
+                            con_NV.Open();
+                            con_NV.Close();
+                            MessageBox.Show("Đăng nhập thành công.");
+                            this.Hide();
+
+                            switch (Role)
+                            {
+                                case "NVCB":
+                                    NavNVCB navNVCB = new NavNVCB();
+                                    navNVCB.Show();
+                                    break;
+                                case "GV":
+                                    NavGV navGV = new NavGV();
+                                    navGV.Show();
+                                    break;
+                                case "GVU":
+                                    NavGVU navGvu = new NavGVU();
+                                    navGvu.Show();
+                                    break;
+                                case "TDV":
+                                    NavTDV navTDV = new NavTDV();
+                                    navTDV.Show();
+                                    break;
+                                case "TK":
+                                    NavTK navTK = new NavTK();
+                                    navTK.Show();
+                                    break;
+                                case "SC":
+                                    NavSC navSC = new NavSC();
+                                    navSC.Show();
+                                    break;
+
+                            }
+                            return;
+                            //NavForm nav = new NavForm();
+                            //nav.Show();
+                        }
+                        catch (Exception ex)
+                        {
+                            con_NV.Close();
+                            MessageBox.Show("Đăng nhập thất bại");
+                        }
+                    }
+                    else
+                        MessageBox.Show("Đăng nhập thất bại");
+
+
+                }    
+
+
             }
-            catch (Exception ex)
+            else
             {
-                con.Close();
-                MessageBox.Show("Đăng nhập thất bại");
-            }
+                MessageBox.Show("Vui lòng chọn phân hệ");
+            }    
         }
 
         private void button1_Click(object sender, EventArgs e)
