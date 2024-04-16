@@ -89,7 +89,7 @@ namespace QuanTriTrongOracle
                 else if (ph == "PH2")
                 {
                     string Role;
-                    String connect_QLDL = @"DATA SOURCE =localhost:1521/XE; USER ID= ADMIN; PASSWORD=ADMIN";
+                    String connect_QLDL = @"DATA SOURCE =localhost:1521/XE; USER ID= ADMINQL; PASSWORD=ADMINQL";
                     OracleConnection con = new OracleConnection(connect_QLDL);
                     con.Open();
                     string query = "SELECT VAITRO FROM NHANSU WHERE MANV='" + username.Text+"'";
@@ -115,27 +115,27 @@ namespace QuanTriTrongOracle
 
                             switch (Role)
                             {
-                                case "NVCB":
+                                case "NHAN VIEN CO BAN":
                                     NavNVCB navNVCB = new NavNVCB();
                                     navNVCB.Show();
                                     break;
-                                case "GV":
+                                case "GIANG VIEN":
                                     NavGV navGV = new NavGV();
                                     navGV.Show();
                                     break;
-                                case "GVU":
+                                case "GIAO VU":
                                     NavGVU navGvu = new NavGVU();
                                     navGvu.Show();
                                     break;
-                                case "TDV":
+                                case "TRUONG DON VI":
                                     NavTDV navTDV = new NavTDV();
                                     navTDV.Show();
                                     break;
-                                case "TK":
+                                case "TRUONG KHOA":
                                     NavTK navTK = new NavTK();
                                     navTK.Show();
                                     break;
-                                case "SC":
+                                case "SINH VIEN":
                                     NavSC navSC = new NavSC();
                                     navSC.Show();
                                     break;

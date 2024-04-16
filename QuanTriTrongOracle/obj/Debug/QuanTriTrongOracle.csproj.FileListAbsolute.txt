@@ -42,3 +42,9 @@ C:\Users\as\Downloads\Submit File\ATBM-04-Phanhe1\Source\QuanTriTrongOracle\obj\
 C:\Users\as\Downloads\Submit File\ATBM-04-Phanhe1\Source\QuanTriTrongOracle\obj\Debug\QuanTriT.8415BFEF.Up2Date
 C:\Users\as\Downloads\Submit File\ATBM-04-Phanhe1\Source\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.exe
 C:\Users\as\Downloads\Submit File\ATBM-04-Phanhe1\Source\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.pdb
+C:\Users\as\Downloads\Submit File\ATBM-04-Phanhe1\Source\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavNVCB.resources
+C:\Users\as\Downloads\Submit File\ATBM-04-Phanhe1\Source\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_NhanSu.resources
+C:\Users\as\Downloads\Submit File\ATBM-04-Phanhe1\Source\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_Dvi.resources
+C:\Users\as\Downloads\Submit File\ATBM-04-Phanhe1\Source\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_HocPhan.resources
+C:\Users\as\Downloads\Submit File\ATBM-04-Phanhe1\Source\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_KHMO.resources
+C:\Users\as\Downloads\Submit File\ATBM-04-Phanhe1\Source\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_SinhVien.resources
