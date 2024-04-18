@@ -177,6 +177,30 @@
     <Compile Include="TabNVCB\NVCB_SinhVien.Designer.cs">
       <DependentUpon>NVCB_SinhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="TabSC\SC_DangKy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabSC\SC_DangKy.Designer.cs">
+      <DependentUpon>SC_DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabSC\SC_HocPhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabSC\SC_HocPhan.Designer.cs">
+      <DependentUpon>SC_HocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabSC\SC_KHMO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabSC\SC_KHMO.Designer.cs">
+      <DependentUpon>SC_KHMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabSC\SC_SinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabSC\SC_SinhVien.Designer.cs">
+      <DependentUpon>SC_SinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tab\DetailUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -222,6 +246,9 @@
     <EmbeddedResource Include="NavNVCB.resx">
       <DependentUpon>NavNVCB.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NavSC.resx">
+      <DependentUpon>NavSC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -245,6 +272,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TabNVCB\NVCB_SinhVien.resx">
       <DependentUpon>NVCB_SinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabSC\SC_DangKy.resx">
+      <DependentUpon>SC_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabSC\SC_HocPhan.resx">
+      <DependentUpon>SC_HocPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabSC\SC_KHMO.resx">
+      <DependentUpon>SC_KHMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabSC\SC_SinhVien.resx">
+      <DependentUpon>SC_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tab\DetailUser.resx">
       <DependentUpon>DetailUser.cs</DependentUpon>

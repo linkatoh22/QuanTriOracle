@@ -30,7 +30,7 @@ namespace QuanTriTrongOracle.TabNVCB
         {
             con.Open();
             OracleCommand getEmps = con.CreateCommand();
-            getEmps.CommandText = "SELECT * FROM ADMINQL.VIEW_NHANVIENCOBAN_NHANSU";
+            getEmps.CommandText = "SELECT * FROM ADMINQL.NHANSU";
             getEmps.CommandType = CommandType.Text;
             OracleDataReader empDR = getEmps.ExecuteReader();
             DataTable empDT = new DataTable();
