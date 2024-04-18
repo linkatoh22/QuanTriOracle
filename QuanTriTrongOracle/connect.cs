@@ -13,6 +13,7 @@ namespace QuanTriTrongOracle
         string PATH = "localhost:1521/XE;";
         static string conString = "";
         private string role;
+        private string username;
 
         public static OracleConnection getConnection()
         {
@@ -32,6 +33,10 @@ namespace QuanTriTrongOracle
         {
             return conString;
         }
+        public string getusername()
+        {
+            return username;
+        }
 
         public void setConnect(string username, string password,string type)
         {
@@ -39,10 +44,12 @@ namespace QuanTriTrongOracle
             {
                 //conString = @"DATA SOURCE =" + PATH + "; USER ID=" + username + ";PASSWORD=" + password+";DBA PRIVILEGE=SYSDBA";
                 conString = @"DATA SOURCE =" + PATH + "; USER ID=" + username + ";PASSWORD=" + password + ";DBA PRIVILEGE=SYSDBA";
+
             }
             else if(type == "PH2")
             {
                 conString = @"DATA SOURCE =" + PATH + "; USER ID=" + username + ";PASSWORD=" + password;
+                this.username = username;
             }    
         }
     }
