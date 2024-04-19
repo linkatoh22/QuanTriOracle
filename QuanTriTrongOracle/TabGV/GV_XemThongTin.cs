@@ -1,5 +1,4 @@
-﻿using Oracle.ManagedDataAccess.Client;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,19 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Oracle.ManagedDataAccess.Client;
 
-namespace QuanTriTrongOracle.TabNVCB
+
+namespace QuanTriTrongOracle.TabGV
 {
-    public partial class NVCB_NhanSu : UserControl
+    public partial class GV_XemThongTin : UserControl
     {
         OracleConnection con = new OracleConnection(new connect().getString());
-        public NVCB_NhanSu()
+
+        public GV_XemThongTin()
         {
             InitializeComponent();
             updateGrid();
         }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -46,7 +46,7 @@ namespace QuanTriTrongOracle.TabNVCB
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

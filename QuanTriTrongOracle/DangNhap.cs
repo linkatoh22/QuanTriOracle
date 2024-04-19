@@ -115,27 +115,27 @@ namespace QuanTriTrongOracle
 
                             switch (Role)
                             {
-                                case "NHAN VIEN CO BAN":
+                                case "NHANVIENCOBAN":
                                     NavNVCB navNVCB = new NavNVCB();
                                     navNVCB.Show();
                                     break;
-                                case "GIANG VIEN":
+                                case "GIANGVIEN":
                                     NavGV navGV = new NavGV();
                                     navGV.Show();
                                     break;
-                                case "GIAO VU":
+                                case "GIAOVU":
                                     NavGVU navGvu = new NavGVU();
                                     navGvu.Show();
                                     break;
-                                case "TRUONG DON VI":
+                                case "TRUONGDV":
                                     NavTDV navTDV = new NavTDV();
                                     navTDV.Show();
                                     break;
-                                case "TRUONG KHOA":
+                                case "TRUONGKHOA":
                                     NavTK navTK = new NavTK();
                                     navTK.Show();
                                     break;
-                                case "SINH VIEN":
+                                case "SINHVIEN":
                                     NavSC navSC = new NavSC();
                                     navSC.Show();
                                     break;
