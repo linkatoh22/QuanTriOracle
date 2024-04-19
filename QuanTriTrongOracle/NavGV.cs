@@ -25,19 +25,20 @@ namespace QuanTriTrongOracle
             InitializeComponent();
             InitializeNavigationControl();
             InitializeNavigationButton();
-        }
+        }                                                                               
 
         private void InitializeNavigationControl()
         {
             List<UserControl> userControls = new List<UserControl>()
-            {
-                new GV_XemThongTin(), new GV_XemSinhVien(), new GV_XemDonVi(), new GV_XemHocPhan(), new GV_XemKHMo() };
+            { new GV_XemThongTin(), new GV_XemSinhVien(), new GV_XemDonVi(), new GV_XemHocPhan(), new GV_XemKHMo(), 
+              new GV_XemPhanCong(), new GV_DangKy() };
             navigationControl_GV = new NavigationControl(userControls, panel2_GV);
             navigationControl_GV.Display(0);
         }
         private void InitializeNavigationButton()
         {
-            List<Button> buttons = new List<Button>() { Nav_XemThongTin, Nav_XemSinhVien, Nav_XemDonVi, Nav_XemHocPhan, Nav_XemKHMo };
+            List<Button> buttons = new List<Button>() { Nav_XemThongTin, Nav_XemSinhVien, Nav_XemDonVi, Nav_XemHocPhan, 
+                                                        Nav_XemKHMo, Nav_XemPhanCong,Nav_DangKy };
             navigationButtons_GV = new NavigationButtons(buttons, btnDefaultColor_GV, btnSelectedtColor_GV);
             navigationButtons_GV.Hightlight(Nav_XemThongTin);
         }
@@ -71,5 +72,16 @@ namespace QuanTriTrongOracle
             navigationButtons_GV.Hightlight(Nav_XemKHMo);
         }
 
+        private void Nav_XemPhanCong_Click(object sender, EventArgs e)
+        {
+            navigationControl_GV.Display(5);
+            navigationButtons_GV.Hightlight(Nav_XemPhanCong);
+        }
+
+        private void Nav_DangKy_Click(object sender, EventArgs e)
+        {
+            navigationControl_GV.Display(6);
+            navigationButtons_GV.Hightlight(Nav_DangKy);
+        }
     }
 }

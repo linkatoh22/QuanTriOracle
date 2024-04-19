@@ -181,6 +181,18 @@
     <Compile Include="TabGV\GV_XemKHMo.Designer.cs">
       <DependentUpon>GV_XemKHMo.cs</DependentUpon>
     </Compile>
+    <Compile Include="TabGV\GV_XemPhanCong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabGV\GV_XemPhanCong.Designer.cs">
+      <DependentUpon>GV_XemPhanCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabGV\GV_DangKy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabGV\GV_DangKy.Designer.cs">
+      <DependentUpon>GV_DangKy.cs</DependentUpon>
+    </Compile>
     <Compile Include="TabNVCB\NVCB_Dvi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -276,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavGV.resx">
+      <DependentUpon>NavGV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NavNVCB.resx">
       <DependentUpon>NavNVCB.cs</DependentUpon>
