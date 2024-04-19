@@ -88,18 +88,37 @@ namespace QuanTriTrongOracle
                 }
                 else if (ph == "PH2")
                 {
-                    string Role;
+                    string Role, Role_SV;
                     String connect_QLDL = @"DATA SOURCE =localhost:1521/XE; USER ID= ADMINQL; PASSWORD=ADMINQL";
                     OracleConnection con = new OracleConnection(connect_QLDL);
                     con.Open();
                     string query = "SELECT VAITRO FROM NHANSU WHERE MANV='" + username.Text+"'";
+                    
 
                     OracleCommand cmd = new OracleCommand(query, con);
                     cmd.ExecuteNonQuery();
                     //OracleDataReader dr = cmd.ExecuteReader();
                     Role = cmd.ExecuteScalar()?.ToString();
-                    con.Close();
 
+                    
+                    if(Role==null)
+                    {
+                        Console.WriteLine("NO DANG VO DAY NE");
+                        string query_SV = "SELECT MASV FROM SINHVIEN WHERE MASV='" + username.Text + "'";
+                        OracleCommand cmdSV = new OracleCommand(query_SV, con);
+                        cmdSV.ExecuteNonQuery();
+                        //OracleDataReader dr = cmd.ExecuteReader();
+                        Role_SV = cmdSV.ExecuteScalar()?.ToString();
+                        Console.WriteLine("NO DANG VO DAY NE:      "+ Role_SV);
+                        Role = Role_SV;
+                        if (Role!=null)
+                        {
+                            Role = "SINHVIEN";
+                        }    
+                        
+                    }    
+                    con.Close();
+                    Console.WriteLine("Role ne"+Role);
 
                     if (Role!=null)
                     {
@@ -115,30 +134,32 @@ namespace QuanTriTrongOracle
 
                             switch (Role)
                             {
-                                case "NHAN VIEN CO BAN":
+                                case "NHANVIENCOBAN":
                                     NavNVCB navNVCB = new NavNVCB();
                                     navNVCB.Show();
                                     break;
-                                case "GIANG VIEN":
+                                case "GIANGVIEN":
                                     NavGV navGV = new NavGV();
                                     navGV.Show();
                                     break;
-                                case "GIAO VU":
+                                case "GIAOVU":
                                     NavGVU navGvu = new NavGVU();
                                     navGvu.Show();
                                     break;
-                                case "TRUONG DON VI":
+                                case "TRUONGDV":
                                     NavTDV navTDV = new NavTDV();
                                     navTDV.Show();
                                     break;
-                                case "TRUONG KHOA":
+                                case "TRUONGKHOA":
                                     NavTK navTK = new NavTK();
                                     navTK.Show();
                                     break;
-                                case "SINH VIEN":
+                                case "SINHVIEN":
                                     NavSC navSC = new NavSC();
                                     navSC.Show();
                                     break;
+                                
+
 
                             }
                             return;
