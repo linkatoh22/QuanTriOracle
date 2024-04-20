@@ -165,6 +165,7 @@
             // 
             // Nav_DangKy
             // 
+
             this.Nav_DangKy.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.Nav_DangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nav_DangKy.Location = new System.Drawing.Point(4, 641);
@@ -175,6 +176,7 @@
             this.Nav_DangKy.Text = "Đăng Ký";
             this.Nav_DangKy.UseVisualStyleBackColor = false;
             this.Nav_DangKy.Click += new System.EventHandler(this.Nav_DangKy_Click);
+ 
             // 
             // NavGV
             // 

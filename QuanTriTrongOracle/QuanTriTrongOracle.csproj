@@ -307,6 +307,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TabGV\GV_DangKy.resx">
+      <DependentUpon>GV_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TabNVCB\NVCB_Dvi.resx">
       <DependentUpon>NVCB_Dvi.cs</DependentUpon>
     </EmbeddedResource>

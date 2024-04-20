@@ -9,61 +9,145 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
 
-
 namespace QuanTriTrongOracle.TabGV
 {
     public partial class GV_DangKy : UserControl
     {
-        OracleConnection con = new OracleConnection(new connect().getString());
-
+        OracleConnection con;
         public GV_DangKy()
         {
             InitializeComponent();
-            updateGrid();
+            this.GVDataGrid.CellClick += new DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
         }
+
+
+        //TAB2
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+                // Lấy chỉ số của dòng được chọn
+                int rowIndex = e.RowIndex;
 
+                // Kiểm tra xem chỉ số dòng có hợp lệ không
+                if (rowIndex >= 0 && rowIndex < GVDataGrid.Rows.Count)
+                {
+                    // Lấy thông tin từ dòng được chọn
+                    DataGridViewRow selectedRow = GVDataGrid.Rows[rowIndex];
+
+                    // Cập nhật các textbox với thông tin từ dòng được chọn
+                    textBox7.Text = selectedRow.Cells["MASV"].Value.ToString(); // Mã SV
+                    textBox8.Text = selectedRow.Cells["MAGV"].Value.ToString(); // Mã GV
+                    textBox9.Text = selectedRow.Cells["MAHP"].Value.ToString(); // Mã HP
+                    textBox10.Text = selectedRow.Cells["HK"].Value.ToString(); // Học kỳ
+                    textBox6.Text = selectedRow.Cells["NAM"].Value.ToString(); // Năm
+                    textBox1.Text = selectedRow.Cells["MACT"].Value.ToString(); // Mã CT
+                    textBox2.Text = selectedRow.Cells["DIEMTHI"].Value.ToString();
+                    textBox3.Text = selectedRow.Cells["DIEMQT"].Value.ToString(); 
+                    textBox4.Text = selectedRow.Cells["DIEMCK"].Value.ToString(); 
+                    textBox5.Text = selectedRow.Cells["DIEMTK"].Value.ToString(); 
+            }
+            // Thêm sự kiện CellClick vào GVDataGrid
+            this.GVDataGrid.CellClick += new DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
         }
 
-        private void updateGrid()
+        private void LoadSVBtn_Click(object sender, EventArgs e)
         {
+            con = connect.getConnection();
             con.Open();
-            OracleCommand getEmps = con.CreateCommand();
-            getEmps.CommandText = "SELECT * FROM ADMINQL.DANGKY";
-            getEmps.CommandType = CommandType.Text;
-            OracleDataReader empDR = getEmps.ExecuteReader();
-            DataTable empDT = new DataTable();
-            empDT.Load(empDR);
-            dataGridView1.DataSource = empDT;
+            try
+            {
+                string query = "SELECT * FROM ADMINQL.DANGKY";
+                using (OracleCommand cmd = new OracleCommand(query, con))
+                {
+                    using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        GVDataGrid.DataSource = dataTable;
+                        foreach (DataGridViewColumn column in GVDataGrid.Columns)
+                        {
+                            column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi
+                MessageBox.Show("Error: " + ex.Message);
+            }
             con.Close();
         }
-
-        private void label2_Click(object sender, EventArgs e)
+        
+        private void UpdateDiem_Click(object sender, EventArgs e)
         {
+            
+            string diemThi1  = textBox2.Text;
+            string diemQT1 = textBox3.Text;
+            string diemCK1 = textBox4.Text;
+            string diemTK1 = textBox5.Text;
 
-        }
+            // Kiểm tra xem các trường thông tin đã được nhập đủ chưa
+            if (diemThi1.Length == 0 || diemQT1.Length == 0 || diemCK1.Length == 0 || diemTK1.Length == 0) {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin.");
+                return;
+            } 
 
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
-        {
+            // Lấy dữ liệu từ các TextBox và chuyển đổi sang dạng số
+            decimal diemThi = decimal.Parse(textBox2.Text);
+            decimal diemQt = decimal.Parse(textBox3.Text);
+            decimal diemCk = decimal.Parse(textBox4.Text);
+            decimal diemTk = decimal.Parse(textBox5.Text);
 
-        }
+            // Kiểm tra dữ liệu hợp lệ (ví dụ: có thể thêm kiểm tra để đảm bảo rằng điểm nằm trong khoảng từ 0 đến 10)
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+            // Thực hiện cập nhật vào cơ sở dữ liệu
+            try
+            {
+                con = connect.getConnection();
+                con.Open();
 
-        }
+                string query = "UPDATE ADMINQL.DANGKY SET DIEMTHI = :diemThi, DIEMQT = :diemQt, DIEMCK = :diemCk, DIEMTK = :diemTk WHERE MA_SV = :maSv AND MA_GV = :maGv AND MA_HP = :maHp AND HOC_KY = :hocKy AND NAM = :nam";
+                using (OracleCommand cmd = new OracleCommand(query, con))
+                {
+                    cmd.Parameters.Add(":diemThi", OracleDbType.Decimal).Value = diemThi;
+                    cmd.Parameters.Add(":diemQt", OracleDbType.Decimal).Value = diemQt;
+                    cmd.Parameters.Add(":diemCk", OracleDbType.Decimal).Value = diemCk;
+                    cmd.Parameters.Add(":diemTk", OracleDbType.Decimal).Value = diemTk;
+                    cmd.Parameters.Add(":maSv", OracleDbType.Varchar2).Value = textBox7.Text;
+                    cmd.Parameters.Add(":maGv", OracleDbType.Varchar2).Value = textBox8.Text;
+                    cmd.Parameters.Add(":maHp", OracleDbType.Varchar2).Value = textBox9.Text;
+                    cmd.Parameters.Add(":hocKy", OracleDbType.Varchar2).Value = textBox10.Text;
+                    cmd.Parameters.Add(":nam", OracleDbType.Varchar2).Value = textBox6.Text;
+                    cmd.Parameters.Add(":maCT", OracleDbType.Varchar2).Value = textBox1.Text;
 
-        private void Update_DiemTH_Click(object sender, EventArgs e)
-        {
-            con.Open();
-            OracleCommand cmd = new OracleCommand("ADMINQL.PROC_UPD_SDT", con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("DiemTH", "varchar2").Value = textBox1.Text;
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Update điểm TH thành công");
-            con.Close();
-            updateGrid();
+                    int rowsUpdated = cmd.ExecuteNonQuery();
+                    if (rowsUpdated > 0)
+                    {
+                        MessageBox.Show("Cập nhật điểm số thành công.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không có dữ liệu nào được cập nhật.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi cập nhật điểm số: " + ex.Message);
+            }
+            finally
+            {
+                if (con != null && con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+            }
         }
     }
 }
