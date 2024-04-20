@@ -107,11 +107,11 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="NavGV.cs">
+    <Compile Include="NavTK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NavGV.Designer.cs">
-      <DependentUpon>NavGV.cs</DependentUpon>
+    <Compile Include="NavTK.Designer.cs">
+      <DependentUpon>NavTK.cs</DependentUpon>
     </Compile>
     <Compile Include="NavGVU.cs">
       <SubType>Form</SubType>
@@ -138,12 +138,6 @@
     </Compile>
     <Compile Include="NavTDV.Designer.cs">
       <DependentUpon>NavTDV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NavTK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NavTK.Designer.cs">
-      <DependentUpon>NavTK.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -242,6 +236,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavTK.resx">
+      <DependentUpon>NavTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavGVU.resx">
+      <DependentUpon>NavGVU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NavNVCB.resx">
       <DependentUpon>NavNVCB.cs</DependentUpon>
