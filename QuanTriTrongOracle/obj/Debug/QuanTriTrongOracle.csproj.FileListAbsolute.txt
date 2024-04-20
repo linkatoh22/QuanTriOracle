@@ -161,3 +161,5 @@ C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\Qua
 C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.pdb
 C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavGVU.resources
 C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTK.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTK.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavGVU.resources

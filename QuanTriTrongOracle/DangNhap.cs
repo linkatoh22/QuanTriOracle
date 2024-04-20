@@ -139,22 +139,14 @@ namespace QuanTriTrongOracle
                                     navNVCB.Show();
                                     break;
                                 case "GIANGVIEN":
-<<<<<<< HEAD
-                                    NavGV navGV = new NavGV();
-=======
                                     NavTK navGV = new NavTK();
->>>>>>> duy
                                     navGV.Show();
                                     break;
                                 case "GIAOVU":
                                     NavGVU navGvu = new NavGVU();
                                     navGvu.Show();
                                     break;
-<<<<<<< HEAD
-                                case "TRUONGDV":
-=======
                                 case "TRUONGDONVI":
->>>>>>> duy
                                     NavTDV navTDV = new NavTDV();
                                     navTDV.Show();
                                     break;
