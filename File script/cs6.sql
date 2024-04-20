@@ -1,7 +1,7 @@
 
 --SINHVIEN
---Trên quan h? SINHVIEN, sinh viên ch? ???c xem thông tin c?a chính mình, ???c
---Ch?nh s?a thông tin ??a ch? (?CHI) và s? ?i?n tho?i liên l?c (?T) c?a chính sinh viên.
+--Trï¿½n quan h? SINHVIEN, sinh viï¿½n ch? ???c xem thï¿½ng tin c?a chï¿½nh mï¿½nh, ???c
+--Ch?nh s?a thï¿½ng tin ??a ch? (?CHI) vï¿½ s? ?i?n tho?i liï¿½n l?c (?T) c?a chï¿½nh sinh viï¿½n.
 /
 CREATE OR REPLACE FUNCTION VPD_SV_SINHVIEN(P_SCHEMA VARCHAR2,P_OBJ VARCHAR2)
 RETURN VARCHAR2
@@ -46,8 +46,8 @@ END;
 
 
 
---Xem danh sách t?t c? h?c ph?n (HOCPHAN), k? ho?ch m? môn (KHMO) c?a ch??ng
---trình ?ào t?o mà sinh viên ?ang theo h?c.
+--Xem danh sï¿½ch t?t c? h?c ph?n (HOCPHAN), k? ho?ch m? mï¿½n (KHMO) c?a ch??ng
+--trï¿½nh ?ï¿½o t?o mï¿½ sinh viï¿½n ?ang theo h?c.
 
 /
 CREATE OR REPLACE FUNCTION VPD_SV_HOCPHAN(
@@ -132,8 +132,8 @@ BEGIN
 END;
 /
 
---Thêm, Xóa các dòng d? li?u ??ng ký h?c ph?n (?ANGKY) liên quan ??n chính sinh
---viên ?ó trong h?c k? c?a n?m h?c hi?n t?i (n?u th?i ?i?m hi?u ch?nh ??ng ký còn h?p
+--Thï¿½m, Xï¿½a cï¿½c dï¿½ng d? li?u ??ng kï¿½ h?c ph?n (?ANGKY) liï¿½n quan ??n chï¿½nh sinh
+--viï¿½n ?ï¿½ trong h?c k? c?a n?m h?c hi?n t?i (n?u th?i ?i?m hi?u ch?nh ??ng kï¿½ cï¿½n h?p
 --l?).
 CREATE OR REPLACE FUNCTION FUNC_DAY
 RETURN VARCHAR2
@@ -208,7 +208,7 @@ AS
 BEGIN
     IF(UPPER(FUNC_VAITRO(USER))='SINHVIEN') THEN
         YEAR1:=FUNC_YEAR();
-            IF FUNC_DAY() < '14' THEN
+            IF FUNC_DAY() < '15' THEN
                     IF FUNC_MONTH() = '1' THEN
                         RETURN 'HK=1 AND MASV = ''' || SYS_CONTEXT('USERENV','SESSION_USER') || ''' AND NAM= '||YEAR1;
                     ELSIF FUNC_MONTH() = '5' THEN
@@ -239,8 +239,8 @@ BEGIN
     );
 END;
 /
---Sinh viên ???c Xem t?t c? thông tin trên quan h? ?ANGKY t?i các dòng d? li?u liên
---quan ??n chính sinh viên.
+--Sinh viï¿½n ???c Xem t?t c? thï¿½ng tin trï¿½n quan h? ?ANGKY t?i cï¿½c dï¿½ng d? li?u liï¿½n
+--quan ??n chï¿½nh sinh viï¿½n.
 CREATE OR REPLACE FUNCTION VPD_SV_DANGKY(
     P_SCHEMA IN VARCHAR2,
     P_OBJECT IN VARCHAR2)
