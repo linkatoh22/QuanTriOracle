@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanTriTrongOracle.TabTDV;
-
+using System.Reflection;
 
 namespace QuanTriTrongOracle
 {
@@ -20,6 +20,12 @@ namespace QuanTriTrongOracle
         Color btnDefaultColor_TDV = Color.MediumSeaGreen;
         Color btnSelectedtColor_TDV = Color.Chartreuse;
 
+        List<UserControl> userControls = new List<UserControl>()
+        {
+        new TDV_XemThongTin(), new TDV_XemSinhVien(), new TDV_XemDonVi(), new TDV_XemHocPhan(),
+        new TDV_XemKHMo(), new TDV_XemPhanCong(), new TDV_DangKy(), new TDV_PCGD()
+        };
+
         public NavTDV()
         {
             InitializeComponent();
@@ -29,12 +35,10 @@ namespace QuanTriTrongOracle
 
         private void InitializeNavigationControl()
         {
-            List<UserControl> userControls = new List<UserControl>()
-            { new TDV_XemThongTin(), new TDV_XemSinhVien(), new TDV_XemDonVi(), new TDV_XemHocPhan(), new TDV_XemKHMo(),
-              new TDV_XemPhanCong(), new TDV_DangKy(), new TDV_PCGD(), new TDV_PCHP() };
             navigationControl_TDV = new NavigationControl(userControls, panel2_TDV);
             navigationControl_TDV.Display(0);
         }
+
         private void InitializeNavigationButton()
         {
             List<Button> buttons = new List<Button>() { Nav_XemThongTin, Nav_XemSinhVien, Nav_XemDonVi, Nav_XemHocPhan,
@@ -92,8 +96,9 @@ namespace QuanTriTrongOracle
 
         private void Nav_PCHP_Click(object sender, EventArgs e)
         {
-            navigationControl_TDV.Display(8);
-            navigationButtons_TDV.Hightlight(Nav_PCHP);
+            TDV_PCHP tdvPCHPForm = new TDV_PCHP();
+            tdvPCHPForm.Show();
         }
+
     }
 }

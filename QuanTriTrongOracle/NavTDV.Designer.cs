@@ -71,6 +71,7 @@
             this.tableLayoutPanel1.Controls.Add(this.Nav_XemSinhVien, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.Nav_XemDonVi, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.Nav_XemHocPhan, 0, 3);
+
             this.tableLayoutPanel1.Controls.Add(this.Nav_PCGD, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.Nav_XemPhanCong, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.Nav_DangKy, 0, 6);
