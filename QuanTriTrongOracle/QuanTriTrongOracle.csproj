@@ -151,6 +151,48 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabTDV\TDV_DangKy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTDV\TDV_DangKy.Designer.cs">
+      <DependentUpon>TDV_DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemDonVi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemDonVi.Designer.cs">
+      <DependentUpon>TDV_XemDonVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemHocPhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemHocPhan.Designer.cs">
+      <DependentUpon>TDV_XemHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemKHMo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemKHMo.Designer.cs">
+      <DependentUpon>TDV_XemKHMo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemPhanCong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemPhanCong.Designer.cs">
+      <DependentUpon>TDV_XemPhanCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemSinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemSinhVien.Designer.cs">
+      <DependentUpon>TDV_XemSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemThongTin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTDV\TDV_XemThongTin.Designer.cs">
+      <DependentUpon>TDV_XemThongTin.cs</DependentUpon>
+    </Compile>
     <Compile Include="TabGV\GV_XemThongTin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -307,6 +349,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TabTDV\TDV_DangKy.resx">
+      <DependentUpon>TDV_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TabGV\GV_DangKy.resx">
       <DependentUpon>GV_DangKy.cs</DependentUpon>
     </EmbeddedResource>

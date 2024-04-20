@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
 
-namespace QuanTriTrongOracle.TabGV
+namespace QuanTriTrongOracle.TabTDV
 {
-    public partial class GV_DangKy : UserControl
+    public partial class TDV_DangKy : UserControl
     {
         OracleConnection con;
-        public GV_DangKy()
+        public TDV_DangKy()
         {
             InitializeComponent();
             this.GVDataGrid.CellClick += new DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
