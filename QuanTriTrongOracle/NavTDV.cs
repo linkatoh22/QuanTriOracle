@@ -31,14 +31,14 @@ namespace QuanTriTrongOracle
         {
             List<UserControl> userControls = new List<UserControl>()
             { new TDV_XemThongTin(), new TDV_XemSinhVien(), new TDV_XemDonVi(), new TDV_XemHocPhan(), new TDV_XemKHMo(),
-              new TDV_XemPhanCong(), new TDV_DangKy() };
+              new TDV_XemPhanCong(), new TDV_DangKy(), new TDV_PCGD(), new TDV_PCHP() };
             navigationControl_TDV = new NavigationControl(userControls, panel2_TDV);
             navigationControl_TDV.Display(0);
         }
         private void InitializeNavigationButton()
         {
             List<Button> buttons = new List<Button>() { Nav_XemThongTin, Nav_XemSinhVien, Nav_XemDonVi, Nav_XemHocPhan,
-                                                        Nav_XemKHMo, Nav_XemPhanCong,Nav_DangKy };
+                                                        Nav_XemKHMo, Nav_XemPhanCong,Nav_DangKy, Nav_PCGD, Nav_PCHP };
             navigationButtons_TDV = new NavigationButtons(buttons, btnDefaultColor_TDV, btnSelectedtColor_TDV);
             navigationButtons_TDV.Hightlight(Nav_XemThongTin);
         }
@@ -82,6 +82,18 @@ namespace QuanTriTrongOracle
         {
             navigationControl_TDV.Display(6);
             navigationButtons_TDV.Hightlight(Nav_DangKy);
+        }
+
+        private void Nav_PCGD_Click(object sender, EventArgs e)
+        {
+            navigationControl_TDV.Display(7);
+            navigationButtons_TDV.Hightlight(Nav_PCGD);
+        }
+
+        private void Nav_PCHP_Click(object sender, EventArgs e)
+        {
+            navigationControl_TDV.Display(8);
+            navigationButtons_TDV.Hightlight(Nav_PCHP);
         }
     }
 }

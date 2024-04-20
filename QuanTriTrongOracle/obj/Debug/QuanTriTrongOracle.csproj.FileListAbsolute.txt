@@ -162,3 +162,4 @@ C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOra
 C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavGV.resources
 C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGV.GV_DangKy.resources
 C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTDV.TDV_DangKy.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTDV.resources

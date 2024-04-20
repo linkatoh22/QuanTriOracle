@@ -289,6 +289,18 @@
     <Compile Include="TabSC\SC_SinhVien.Designer.cs">
       <DependentUpon>SC_SinhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="TabTDV\TDV_PCGD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTDV\TDV_PCGD.Designer.cs">
+      <DependentUpon>TDV_PCGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabTDV\TDV_PCHP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTDV\TDV_PCHP.Designer.cs">
+      <DependentUpon>TDV_PCHP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tab\DetailUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -339,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NavSC.resx">
       <DependentUpon>NavSC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavTDV.resx">
+      <DependentUpon>NavTDV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

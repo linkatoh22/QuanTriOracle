@@ -1,6 +1,6 @@
 ﻿namespace QuanTriTrongOracle.TabTDV
 {
-    partial class TDV_XemPhanCong
+    partial class TDV_PCGD
     {
         /// <summary> 
         /// Required designer variable.
@@ -41,7 +41,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Xem Phân Công của mình";
+            this.label1.Text = "Xem Phân công giảng dạy";
             // 
             // dataGridView1
             // 
@@ -52,13 +52,13 @@
             this.dataGridView1.Size = new System.Drawing.Size(748, 510);
             this.dataGridView1.TabIndex = 1;
             // 
-            // TGV_XemPhanCong
+            // TGV_PCGD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Name = "TGV_XemPhanCong";
+            this.Name = "TDV_PCGD";
             this.Size = new System.Drawing.Size(853, 684);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
