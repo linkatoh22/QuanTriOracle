@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\quantritrongoracle\\navtk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|solutionrelative:quantritrongoracle\\navtk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\quantritrongoracle\\navtdv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|solutionrelative:quantritrongoracle\\navtdv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|e:\\clg\\hk2-y3\\winform-at\\phan he 2\\quantrioracle\\quantritrongoracle\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|solutionrelative:quantritrongoracle\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\quantritrongoracle\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|solutionrelative:quantritrongoracle\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\quantritrongoracle\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|solutionrelative:quantritrongoracle\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\quantritrongoracle\\navsc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|solutionrelative:quantritrongoracle\\navsc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\quantritrongoracle\\navnvcb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|solutionrelative:quantritrongoracle\\navnvcb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\quantritrongoracle\\navgvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC55B332-771D-41AF-B35C-80743D5D4B07}|QuanTriTrongOracle\\QuanTriTrongOracle.csproj|solutionrelative:quantritrongoracle\\navgvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,105 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "connect.cs",
-              "DocumentMoniker": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\connect.cs",
-              "RelativeDocumentMoniker": "QuanTriTrongOracle\\connect.cs",
-              "ToolTip": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\connect.cs",
-              "RelativeToolTip": "QuanTriTrongOracle\\connect.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwCMAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T10:32:28.17Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DangNhap.cs",
-              "DocumentMoniker": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\DangNhap.cs",
-              "RelativeDocumentMoniker": "QuanTriTrongOracle\\DangNhap.cs",
-              "ToolTip": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\DangNhap.cs",
-              "RelativeToolTip": "QuanTriTrongOracle\\DangNhap.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T07:06:23.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DangNhap.cs [Design]",
-              "DocumentMoniker": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\DangNhap.cs",
-              "RelativeDocumentMoniker": "QuanTriTrongOracle\\DangNhap.cs",
-              "ToolTip": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\DangNhap.cs [Design]",
-              "RelativeToolTip": "QuanTriTrongOracle\\DangNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T07:06:21.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NavSC.cs [Design]",
-              "DocumentMoniker": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\NavSC.cs",
-              "RelativeDocumentMoniker": "QuanTriTrongOracle\\NavSC.cs",
-              "ToolTip": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\NavSC.cs [Design]",
-              "RelativeToolTip": "QuanTriTrongOracle\\NavSC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T07:04:15.476Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NavNVCB.cs [Design]",
-              "DocumentMoniker": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\NavNVCB.cs",
-              "RelativeDocumentMoniker": "QuanTriTrongOracle\\NavNVCB.cs",
-              "ToolTip": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\NavNVCB.cs [Design]",
-              "RelativeToolTip": "QuanTriTrongOracle\\NavNVCB.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T07:04:14.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NavGVU.cs [Design]",
-              "DocumentMoniker": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\NavGVU.cs",
-              "RelativeDocumentMoniker": "QuanTriTrongOracle\\NavGVU.cs",
-              "ToolTip": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\NavGVU.cs [Design]",
-              "RelativeToolTip": "QuanTriTrongOracle\\NavGVU.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T07:04:10.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NavTK.cs [Design]",
-              "DocumentMoniker": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\NavTK.cs",
-              "RelativeDocumentMoniker": "QuanTriTrongOracle\\NavTK.cs",
-              "ToolTip": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\NavTK.cs [Design]",
-              "RelativeToolTip": "QuanTriTrongOracle\\NavTK.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T07:04:05.127Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NavTDV.cs [Design]",
-              "DocumentMoniker": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\NavTDV.cs",
-              "RelativeDocumentMoniker": "QuanTriTrongOracle\\NavTDV.cs",
-              "ToolTip": "E:\\CLG\\HK2-Y3\\Winform-AT\\PHAN HE 2\\QuanTriOracle\\QuanTriTrongOracle\\NavTDV.cs [Design]",
-              "RelativeToolTip": "QuanTriTrongOracle\\NavTDV.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T07:04:01.214Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
