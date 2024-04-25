@@ -14,7 +14,7 @@ namespace QuanTriTrongOracle.TabGV
 {
     public partial class GV_XemThongTin : UserControl
     {
-        OracleConnection con = new OracleConnection(new connect().getString());
+        OracleConnection con;
 
         public GV_XemThongTin()
         {
@@ -28,6 +28,7 @@ namespace QuanTriTrongOracle.TabGV
 
         private void updateGrid()
         {
+            con = connect.getConnection();
             con.Open();
             OracleCommand getEmps = con.CreateCommand();
             getEmps.CommandText = "SELECT * FROM ADMINQL.NHANSU";

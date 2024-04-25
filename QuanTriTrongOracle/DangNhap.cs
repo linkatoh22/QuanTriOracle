@@ -24,7 +24,7 @@ namespace QuanTriTrongOracle
             /*
             string conStr = @"DATA SOURCE = localhost:1521/XE; USER ID=sys;PASSWORD=admin;DBA PRIVILEGE=SYSDBA";
             con = new OracleConnection(conStr);*/
-           
+
 
         }
 
@@ -61,7 +61,7 @@ namespace QuanTriTrongOracle
 
         private void signInButton_Click(object sender, EventArgs e)
         {
-            
+
             if (cb_ph.SelectedItem != null)
             {
                 string ph = cb_ph.SelectedItem.ToString();
@@ -88,120 +88,102 @@ namespace QuanTriTrongOracle
                 }
                 else if (ph == "PH2")
                 {
-                    string Role, Role_SV;
+                    string Role;
                     String connect_QLDL = @"DATA SOURCE =localhost:1521/XE; USER ID= ADMINQL; PASSWORD=ADMINQL";
-                    OracleConnection con = new OracleConnection(connect_QLDL);
-                    con.Open();
-                    string query = "SELECT VAITRO FROM NHANSU WHERE MANV='" + username.Text+"'";
-                    
-
-                    OracleCommand cmd = new OracleCommand(query, con);
-                    cmd.ExecuteNonQuery();
-                    //OracleDataReader dr = cmd.ExecuteReader();
-                    Role = cmd.ExecuteScalar()?.ToString();
-
-                    
-                    if(Role==null)
+                    using (OracleConnection con = new OracleConnection(connect_QLDL))
                     {
-                        Console.WriteLine("NO DANG VO DAY NE");
-                        string query_SV = "SELECT MASV FROM SINHVIEN WHERE MASV='" + username.Text + "'";
-                        OracleCommand cmdSV = new OracleCommand(query_SV, con);
-                        cmdSV.ExecuteNonQuery();
-                        //OracleDataReader dr = cmd.ExecuteReader();
-                        Role_SV = cmdSV.ExecuteScalar()?.ToString();
-                        Console.WriteLine("NO DANG VO DAY NE:      "+ Role_SV);
-                        Role = Role_SV;
-                        if (Role!=null)
-                        {
-                            Role = "SINHVIEN";
-                        }    
-                        
-                    }    
-                    con.Close();
-                    Console.WriteLine("Role ne"+Role);
+                        con.Open();
+                        OracleCommand cmd = new OracleCommand("SELECT FUNC_VAITRO(:USRNAME) FROM DUAL", con);
 
-                    if (Role!=null)
-                    {
-                        connect conn = new connect();
-                        conn.setConnect(username.Text, password.Text, ph);
-                        OracleConnection con_NV = new OracleConnection(new connect().getString());
-                        try
+                        // Truyền tham số vào hàm
+                        cmd.Parameters.Add("USRNAME", OracleDbType.Varchar2).Value = username.Text;
+
+                        // Nhận giá trị trả về từ hàm
+                        Role = cmd.ExecuteScalar()?.ToString();
+
+                    }
+                        Console.WriteLine("Role ne " + Role);
+
+                        if (Role != null)
                         {
-                            con_NV.Open();
-                            con_NV.Close();
-                            MessageBox.Show("Đăng nhập thành công.");
+                            connect conn = new connect();
+                            conn.setConnect(username.Text, password.Text, ph);
+                            OracleConnection con_NV = new OracleConnection(new connect().getString());
+                            try
+                            {
+                                con_NV.Open();
+                                con_NV.Close();
+                                MessageBox.Show("Đăng nhập thành công.");
+                               
                             this.Hide();
 
-                            switch (Role)
-                            {
-                                case "NHANVIENCOBAN":
-                                    NavNVCB navNVCB = new NavNVCB();
-                                    navNVCB.Show();
-                                    break;
-                                case "GIANGVIEN":
-                                    NavTK navGV = new NavTK();
-                                    navGV.Show();
-                                    break;
-                                case "GIAOVU":
-                                    NavGVU navGvu = new NavGVU();
-                                    navGvu.Show();
-                                    break;
-                                case "TRUONGDONVI":
-                                    NavTDV navTDV = new NavTDV();
-                                    navTDV.Show();
-                                    break;
-                                case "TRUONGKHOA":
-                                    NavTK navTK = new NavTK();
-                                    navTK.Show();
-                                    break;
-                                case "SINHVIEN":
-                                    NavSC navSC = new NavSC();
-                                    navSC.Show();
-                                    break;
-                                
-
-
+                                switch (Role)
+                                {
+                                    case "NHANVIENCOBAN":
+                                        NavNVCB navNVCB = new NavNVCB();
+                                        navNVCB.Show();
+                                        break;
+                                    case "GIANGVIEN":
+                                        NavGV navGV = new NavGV();
+                                        navGV.Show();
+                                        break;
+                                    case "GIAOVU":
+                                        NavGVU navGvu = new NavGVU();
+                                        navGvu.Show();
+                                        break;
+                                    case "TRUONGDV":
+                                        NavTDV navTDV = new NavTDV();
+                                        navTDV.Show();
+                                        break;
+                                    case "TRUONGKHOA":
+                                        NavTK navTK = new NavTK();
+                                        navTK.Show();
+                                        break;
+                                    case "SINHVIEN":
+                                        NavSC navSC = new NavSC();
+                                        navSC.Show();
+                                        break;
+                                    case "DBA":
+                                        NavAD navAD = new NavAD();
+                                        navAD.Show();
+                                        break;
+                                }
+                                return;
+                                //NavForm nav = new NavForm();
+                                //nav.Show();
                             }
-                            return;
-                            //NavForm nav = new NavForm();
-                            //nav.Show();
+                            catch (Exception ex)
+                            {
+                                con_NV.Close();
+                                MessageBox.Show("Đăng nhập thất bại");
+                            }
                         }
-                        catch (Exception ex)
-                        {
-                            con_NV.Close();
+                        else
                             MessageBox.Show("Đăng nhập thất bại");
-                        }
                     }
-                    else
-                        MessageBox.Show("Đăng nhập thất bại");
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn phân hệ");
+                }
+            }
 
-
-                }    
-
+            private void button1_Click(object sender, EventArgs e)
+            {
 
             }
-            else
+            /*
+            private void updateGrid()
             {
-                MessageBox.Show("Vui lòng chọn phân hệ");
-            }    
+                con.Open();
+                OracleCommand getEmps = con.CreateCommand();
+                getEmps.CommandText = "SELECT * FROM sys.ATTENDANCE";
+                getEmps.CommandType = CommandType.Text;
+                OracleDataReader empDR = getEmps.ExecuteReader();
+                DataTable empDT = new DataTable();
+                empDT.Load(empDR);
+                dataGridView1.DataSource = empDT;
+                con.Close();
+            }*/
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-        /*
-        private void updateGrid()
-        {
-            con.Open();
-            OracleCommand getEmps = con.CreateCommand();
-            getEmps.CommandText = "SELECT * FROM sys.ATTENDANCE";
-            getEmps.CommandType = CommandType.Text;
-            OracleDataReader empDR = getEmps.ExecuteReader();
-            DataTable empDT = new DataTable();
-            empDT.Load(empDR);
-            dataGridView1.DataSource = empDT;
-            con.Close();
-        }*/
     }
-}

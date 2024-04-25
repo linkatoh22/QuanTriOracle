@@ -99,6 +99,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="connect.cs" />
+    <Compile Include="NavAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavAD.Designer.cs">
+      <DependentUpon>NavAD.cs</DependentUpon>
+    </Compile>
     <Compile Include="NavForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -337,6 +343,9 @@
     <Compile Include="Tab\XemUser.Designer.cs">
       <DependentUpon>XemUser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="NavAD.resx">
+      <DependentUpon>NavAD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NavForm.resx">
       <DependentUpon>NavForm.cs</DependentUpon>
     </EmbeddedResource>
