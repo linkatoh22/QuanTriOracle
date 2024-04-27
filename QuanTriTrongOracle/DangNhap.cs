@@ -89,7 +89,7 @@ namespace QuanTriTrongOracle
                 else if (ph == "PH2")
                 {
                     string Role, Role_SV;
-                    String connect_QLDL = @"DATA SOURCE =localhost:1521/XE; USER ID= ADMINQL; PASSWORD=ADMINQL";
+                    String connect_QLDL = @"DATA SOURCE =localhost:1521/QLDLNOIBO; USER ID= ADMINQL; PASSWORD=ADMINQL";
                     OracleConnection con = new OracleConnection(connect_QLDL);
                     con.Open();
                     string query = "SELECT VAITRO FROM NHANSU WHERE MANV='" + username.Text+"'";
@@ -139,20 +139,27 @@ namespace QuanTriTrongOracle
                                     navNVCB.Show();
                                     break;
                                 case "GIANGVIEN":
-                                    NavTK navGV = new NavTK();
+                                    NavGV navGV = new NavGV();
                                     navGV.Show();
+                                    
                                     break;
                                 case "GIAOVU":
                                     NavGVU navGvu = new NavGVU();
                                     navGvu.Show();
+                                    ThongBao tb_GV = new ThongBao();
+                                    tb_GV.Show();
                                     break;
-                                case "TRUONGDONVI":
+                                case "TRUONGDV":
                                     NavTDV navTDV = new NavTDV();
                                     navTDV.Show();
+                                    ThongBao tb_TDV = new ThongBao();
+                                    tb_TDV.Show();
                                     break;
                                 case "TRUONGKHOA":
                                     NavTK navTK = new NavTK();
                                     navTK.Show();
+                                    ThongBao tb_TK = new ThongBao();
+                                    tb_TK.Show();
                                     break;
                                 case "SINHVIEN":
                                     NavSC navSC = new NavSC();

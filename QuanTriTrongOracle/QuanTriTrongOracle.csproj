@@ -151,6 +151,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabSC\SC_THONGBAO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabSC\SC_THONGBAO.Designer.cs">
+      <DependentUpon>SC_THONGBAO.cs</DependentUpon>
+    </Compile>
     <Compile Include="TabTDV\TDV_DangKy.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -337,6 +343,12 @@
     <Compile Include="Tab\XemUser.Designer.cs">
       <DependentUpon>XemUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongBao.Designer.cs">
+      <DependentUpon>ThongBao.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="NavForm.resx">
       <DependentUpon>NavForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,6 +376,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TabSC\SC_THONGBAO.resx">
+      <DependentUpon>SC_THONGBAO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TabTDV\TDV_DangKy.resx">
       <DependentUpon>TDV_DangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -417,6 +432,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tab\XemUser.resx">
       <DependentUpon>XemUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongBao.resx">
+      <DependentUpon>ThongBao.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>

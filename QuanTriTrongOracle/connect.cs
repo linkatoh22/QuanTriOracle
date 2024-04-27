@@ -11,6 +11,7 @@ namespace QuanTriTrongOracle
     {
         private static OracleConnection connection;
         string PATH = "localhost:1521/XE;";
+        string PATH_PDB = "localhost:1521/QLDLNOIBO;";
         static string conString = "";
         private string role;
         private string username;
@@ -48,7 +49,7 @@ namespace QuanTriTrongOracle
             }
             else if(type == "PH2")
             {
-                conString = @"DATA SOURCE =" + PATH + "; USER ID=" + username + ";PASSWORD=" + password;
+                conString = @"DATA SOURCE =" + PATH_PDB + "; USER ID=" + username + ";PASSWORD=" + password;
                 this.username = username;
             }    
         }

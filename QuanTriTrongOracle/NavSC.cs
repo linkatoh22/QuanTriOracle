@@ -29,13 +29,13 @@ namespace QuanTriTrongOracle
         {
             List<UserControl> userControls = new List<UserControl>()
             {
-                new SC_SinhVien(),new SC_HocPhan(),new SC_KHMO(),new SC_DangKy() };
+                new SC_SinhVien(),new SC_HocPhan(),new SC_KHMO(),new SC_DangKy(),new SC_THONGBAO()};
             navigationControl_SC = new NavigationControl(userControls, panel2_SC);
             navigationControl_SC.Display(0);
         }
         private void InitializeNavigationButton()
         {
-            List<Button> buttons = new List<Button>() { Nav_InfoSC, Nav_HocPhanSC, Nav_KHMOSC, Nav_DangKySC };
+            List<Button> buttons = new List<Button>() { Nav_InfoSC, Nav_HocPhanSC, Nav_KHMOSC, Nav_DangKySC,Nav_ThongBao};
             navigationButtons_SC = new NavigationButtons(buttons, btnDefaultColor_SC, btnSelectedtColor_SC);
             navigationButtons_SC.Hightlight(Nav_InfoSC);
         }
@@ -62,6 +62,12 @@ namespace QuanTriTrongOracle
         {
             navigationControl_SC.Display(3);
             navigationButtons_SC.Hightlight(Nav_DangKySC);
+        }
+
+        private void Nav_ThongBao_Click(object sender, EventArgs e)
+        {
+            navigationControl_SC.Display(4);
+            navigationButtons_SC.Hightlight(Nav_ThongBao);
         }
     }
 }
