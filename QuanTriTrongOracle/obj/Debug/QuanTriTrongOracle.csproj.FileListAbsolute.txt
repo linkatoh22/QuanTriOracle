@@ -170,3 +170,5 @@ E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\Qu
 E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGV.GV_DangKy.resources
 E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTDV.TDV_PCHP.resources
 C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavAD.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavAD.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Noti.resources

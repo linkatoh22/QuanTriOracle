@@ -89,7 +89,7 @@ namespace QuanTriTrongOracle
                 else if (ph == "PH2")
                 {
                     string Role;
-                    String connect_QLDL = @"DATA SOURCE =localhost:1521/XE; USER ID= ADMINQL; PASSWORD=ADMINQL";
+                    String connect_QLDL = @"DATA SOURCE =localhost:1521/qldlnoibo; USER ID= ADMINQL; PASSWORD=ADMINQL";
                     using (OracleConnection con = new OracleConnection(connect_QLDL))
                     {
                         con.Open();
@@ -122,6 +122,7 @@ namespace QuanTriTrongOracle
                                     case "NHANVIENCOBAN":
                                         NavNVCB navNVCB = new NavNVCB();
                                         navNVCB.Show();
+                                        
                                         break;
                                     case "GIANGVIEN":
                                         NavGV navGV = new NavGV();
@@ -130,19 +131,27 @@ namespace QuanTriTrongOracle
                                     case "GIAOVU":
                                         NavGVU navGvu = new NavGVU();
                                         navGvu.Show();
+                                        Noti Tb_gvu=new Noti();
+                                        Tb_gvu.Show();
                                         break;
                                     case "TRUONGDV":
                                         NavTDV navTDV = new NavTDV();
                                         navTDV.Show();
-                                        break;
+                                        Noti Tb_tdv = new Noti();
+                                        Tb_tdv.Show();
+                                    break;
                                     case "TRUONGKHOA":
                                         NavTK navTK = new NavTK();
                                         navTK.Show();
-                                        break;
+                                        Noti Tb_tk = new Noti();
+                                        Tb_tk.Show();
+                                    break;
                                     case "SINHVIEN":
                                         NavSC navSC = new NavSC();
                                         navSC.Show();
-                                        break;
+                                        Noti Tb_sv = new Noti();
+                                        Tb_sv.Show();
+                                    break;
                                     case "DBA":
                                         NavAD navAD = new NavAD();
                                         navAD.Show();
