@@ -129,7 +129,7 @@ namespace QuanTriTrongOracle
                                         navGV.Show();
                                         break;
                                     case "GIAOVU":
-                                        NavGVU navGvu = new NavGVU();
+                                        Nav_GVU2 navGvu = new Nav_GVU2();
                                         navGvu.Show();
                                         Noti Tb_gvu=new Noti();
                                         Tb_gvu.Show();
