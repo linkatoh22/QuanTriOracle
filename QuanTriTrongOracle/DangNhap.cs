@@ -122,7 +122,6 @@ namespace QuanTriTrongOracle
                                     case "NHANVIENCOBAN":
                                         NavNVCB navNVCB = new NavNVCB();
                                         navNVCB.Show();
-                                        
                                         break;
                                     case "GIANGVIEN":
                                         NavGV navGV = new NavGV();
@@ -139,13 +138,13 @@ namespace QuanTriTrongOracle
                                         navTDV.Show();
                                         Noti Tb_tdv = new Noti();
                                         Tb_tdv.Show();
-                                    break;
+                                        break;
                                     case "TRUONGKHOA":
                                         NavTK navTK = new NavTK();
                                         navTK.Show();
                                         Noti Tb_tk = new Noti();
                                         Tb_tk.Show();
-                                    break;
+                                        break;
                                     case "SINHVIEN":
                                         NavSC navSC = new NavSC();
                                         navSC.Show();

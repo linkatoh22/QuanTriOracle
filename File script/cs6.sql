@@ -120,7 +120,6 @@ END;
 --Sinh vi�n ???c Xem t?t c? th�ng tin tr�n quan h? ?ANGKY t?i c�c d�ng d? li?u li�n
 --quan ??n ch�nh sinh vi�n.
 
-
 GRANT EXECUTE ON PROC_IN_DANGKY_SV TO SINHVIEN;
 GRANT EXECUTE ON PROC_DEL_DANGKY TO SINHVIEN;
 GRANT EXECUTE ON PROC_UPDATESINHVIEN TO SINHVIEN;
