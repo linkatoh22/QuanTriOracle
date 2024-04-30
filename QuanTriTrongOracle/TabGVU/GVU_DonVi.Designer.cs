@@ -46,6 +46,10 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.CoSoTxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CoSoUpdTxt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DVDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,7 +86,7 @@
             // 
             // UpdateDVBtn
             // 
-            this.UpdateDVBtn.Location = new System.Drawing.Point(421, 590);
+            this.UpdateDVBtn.Location = new System.Drawing.Point(421, 651);
             this.UpdateDVBtn.Name = "UpdateDVBtn";
             this.UpdateDVBtn.Size = new System.Drawing.Size(103, 23);
             this.UpdateDVBtn.TabIndex = 72;
@@ -111,7 +115,7 @@
             // 
             this.TenDVUpdTxt.Location = new System.Drawing.Point(145, 587);
             this.TenDVUpdTxt.Name = "TenDVUpdTxt";
-            this.TenDVUpdTxt.Size = new System.Drawing.Size(230, 22);
+            this.TenDVUpdTxt.Size = new System.Drawing.Size(214, 22);
             this.TenDVUpdTxt.TabIndex = 69;
             // 
             // label26
@@ -146,7 +150,7 @@
             // 
             this.MaDVUpTxt.Location = new System.Drawing.Point(145, 525);
             this.MaDVUpTxt.Name = "MaDVUpTxt";
-            this.MaDVUpTxt.Size = new System.Drawing.Size(230, 22);
+            this.MaDVUpTxt.Size = new System.Drawing.Size(214, 22);
             this.MaDVUpTxt.TabIndex = 65;
             // 
             // label30
@@ -162,7 +166,7 @@
             // 
             // InsertDVBtn
             // 
-            this.InsertDVBtn.Location = new System.Drawing.Point(421, 369);
+            this.InsertDVBtn.Location = new System.Drawing.Point(405, 436);
             this.InsertDVBtn.Name = "InsertDVBtn";
             this.InsertDVBtn.Size = new System.Drawing.Size(103, 23);
             this.InsertDVBtn.TabIndex = 63;
@@ -213,12 +217,48 @@
             this.label34.TabIndex = 58;
             this.label34.Text = "Thêm đơn vị";
             // 
+            // CoSoTxt
+            // 
+            this.CoSoTxt.Location = new System.Drawing.Point(470, 400);
+            this.CoSoTxt.Name = "CoSoTxt";
+            this.CoSoTxt.Size = new System.Drawing.Size(230, 22);
+            this.CoSoTxt.TabIndex = 74;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(391, 400);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 16);
+            this.label1.TabIndex = 73;
+            this.label1.Text = "Cơ sở:";
+            // 
+            // CoSoUpdTxt
+            // 
+            this.CoSoUpdTxt.Location = new System.Drawing.Point(470, 584);
+            this.CoSoUpdTxt.Name = "CoSoUpdTxt";
+            this.CoSoUpdTxt.Size = new System.Drawing.Size(230, 22);
+            this.CoSoUpdTxt.TabIndex = 76;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(391, 587);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 16);
+            this.label2.TabIndex = 75;
+            this.label2.Text = "Cơ sở:";
+            // 
             // GVU_DonVi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
+            this.Controls.Add(this.CoSoUpdTxt);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.CoSoTxt);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.UpdateDVBtn);
             this.Controls.Add(this.TrgDVUpdTxt);
             this.Controls.Add(this.label29);
@@ -265,5 +305,9 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox CoSoTxt;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox CoSoUpdTxt;
+        private System.Windows.Forms.Label label2;
     }
 }

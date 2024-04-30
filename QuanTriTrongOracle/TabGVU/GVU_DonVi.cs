@@ -52,6 +52,7 @@ namespace QuanTriTrongOracle.TabGVU
         {
             string madv = MaDVTxt.Text;
             string tendv = TenDVTxt.Text;
+            string coso = CoSoTxt.Text;
             if (madv.Length == 0 || tendv.Length == 0)
             {
                 MessageBox.Show("CHƯA NHẬP ĐẦY ĐỦ DỮ LIỆU");
@@ -70,7 +71,7 @@ namespace QuanTriTrongOracle.TabGVU
                 // Thêm các tham số cho stored procedure
                 command.Parameters.Add("p_MADV", OracleDbType.Varchar2).Value = madv;
                 command.Parameters.Add("p_TENDV", OracleDbType.Varchar2).Value = tendv;
-
+                command.Parameters.Add("p_COSO", OracleDbType.Varchar2).Value = coso;
 
                 command.ExecuteNonQuery();
 
@@ -115,6 +116,7 @@ namespace QuanTriTrongOracle.TabGVU
                         {
                             // Lấy dữ liệu từ OracleDataReader và gán vào các TextBox
                             TenDVUpdTxt.Text = reader.GetString(reader.GetOrdinal("TENDV"));
+                            CoSoUpdTxt.Text = reader.GetString(reader.GetOrdinal("COSO"));
                             TrgDVUpdTxt.Text = reader.GetString(reader.GetOrdinal("TRGDV"));
                         }
                         else
@@ -141,6 +143,7 @@ namespace QuanTriTrongOracle.TabGVU
         {
             string madv = MaDVUpTxt.Text;
             string tendv = TenDVUpdTxt.Text;
+            string coso = CoSoUpdTxt.Text;
             // Kiểm tra xem các trường thông tin đã được nhập đủ chưa
             if (madv.Length == 0 || tendv.Length == 0)
             {
@@ -163,6 +166,7 @@ namespace QuanTriTrongOracle.TabGVU
                     // Thêm các tham số
                     cmd.Parameters.Add("p_MADV", OracleDbType.Varchar2).Value = madv;
                     cmd.Parameters.Add("p_TENDV", OracleDbType.Varchar2).Value = tendv;
+                    cmd.Parameters.Add("p_COSO", OracleDbType.Varchar2).Value = coso;
 
                     // Thực thi truy vấn UPDATE
                     cmd.ExecuteNonQuery();

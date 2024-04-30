@@ -192,5 +192,24 @@ namespace QuanTriTrongOracle.TabGVU
                 }
             }
         }
+
+        private void KHMoUpdDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                MessageBox.Show("BẠN CHỌN DÒNG " + e.RowIndex.ToString());
+                // Lấy dòng được chọn từ DataGridView
+                DataGridViewRow row = KHMoUpdDataGrid.Rows[e.RowIndex];
+                oldMaHPKHMO = row.Cells["MAHP"].Value.ToString();
+                oldHKKHMO = Convert.ToInt32(row.Cells["HK"].Value);
+                oldNamKHMO = Convert.ToInt32(row.Cells["NAM"].Value);
+                oldMACTKHMO = row.Cells["MACT"].Value.ToString();
+
+                MaHPKHMoUpdTxt.Text = oldMaHPKHMO;
+                HocKyUpdTxt.Text = oldHKKHMO.ToString();
+                NamUpdTxt.Text = oldNamKHMO.ToString();
+                MaCTKHMoUpdTxt.Text = oldMACTKHMO;
+            }
+        }
     }
 }

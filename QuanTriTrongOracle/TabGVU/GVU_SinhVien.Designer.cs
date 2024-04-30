@@ -76,6 +76,10 @@
             this.LoadSVUpdBtn = new System.Windows.Forms.Button();
             this.mssvUpdTxt = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.CoSoTxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CoSoUpdTxt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SVDataGrid)).BeginInit();
             this.GenderBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -503,12 +507,48 @@
             this.label15.TabIndex = 50;
             this.label15.Text = "MSSV: ";
             // 
+            // CoSoTxt
+            // 
+            this.CoSoTxt.Location = new System.Drawing.Point(617, 450);
+            this.CoSoTxt.Name = "CoSoTxt";
+            this.CoSoTxt.Size = new System.Drawing.Size(162, 22);
+            this.CoSoTxt.TabIndex = 73;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(560, 453);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 16);
+            this.label1.TabIndex = 72;
+            this.label1.Text = "Cơ sở:  ";
+            // 
+            // CoSoUpdTxt
+            // 
+            this.CoSoUpdTxt.Location = new System.Drawing.Point(662, 709);
+            this.CoSoUpdTxt.Name = "CoSoUpdTxt";
+            this.CoSoUpdTxt.Size = new System.Drawing.Size(145, 22);
+            this.CoSoUpdTxt.TabIndex = 75;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(605, 712);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 16);
+            this.label2.TabIndex = 74;
+            this.label2.Text = "Cơ sở:  ";
+            // 
             // GVU_SinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
+            this.Controls.Add(this.CoSoUpdTxt);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.CoSoTxt);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.TCTLUpdTxt);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.DTBTLUpdTxt);
@@ -615,5 +655,9 @@
         private System.Windows.Forms.Button LoadSVUpdBtn;
         private System.Windows.Forms.TextBox mssvUpdTxt;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox CoSoTxt;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox CoSoUpdTxt;
+        private System.Windows.Forms.Label label2;
     }
 }

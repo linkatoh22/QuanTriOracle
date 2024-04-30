@@ -6,10 +6,10 @@ CREATE OR REPLACE PROCEDURE PROC_UPD_SDT(SDT IN VARCHAR2)
 AS
 BEGIN
     IF SDT IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'SDT không ???c ?? tr?ng');
+        RAISE_APPLICATION_ERROR(-20001, 'SDT khï¿½ng ???c ?? tr?ng');
     END IF;
     IF LENGTH(SDT) > 10 THEN
-        RAISE_APPLICATION_ERROR(-20002, 'S? ?I?N THO?I CH? CÓ 10 S?');
+        RAISE_APPLICATION_ERROR(-20002, 'S? ?I?N THO?I CH? Cï¿½ 10 S?');
     END IF;
     
     UPDATE NHANSU 
@@ -17,7 +17,7 @@ BEGIN
     WHERE MANV = SYS_CONTEXT('USERENV','SESSION_USER');
     
     IF SQL%ROWCOUNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20003, 'Không tìm th?y nhân viên t??ng ?ng');
+        RAISE_APPLICATION_ERROR(-20003, 'Khï¿½ng tï¿½m th?y nhï¿½n viï¿½n t??ng ?ng');
     END IF;
     
 EXCEPTION
@@ -73,11 +73,11 @@ BEGIN
     WHERE MASV = p_MASV AND MAGV = p_MAGV AND MAHP = p_MAHP AND HK = p_HK AND
           NAM = p_NAM AND MACT = p_MACT;
 
-    -- Ki?m tra xem có b?n ghi nào ???c c?p nh?t không
+    -- Ki?m tra xem cï¿½ b?n ghi nï¿½o ???c c?p nh?t khï¿½ng
     IF SQL%ROWCOUNT = 0 THEN
-        DBMS_OUTPUT.PUT_LINE('Thông tin ??ng ký ?ã nh?p không ?úng');
+        DBMS_OUTPUT.PUT_LINE('Thï¿½ng tin ??ng kï¿½ ?ï¿½ nh?p khï¿½ng ?ï¿½ng');
     ELSE
-        DBMS_OUTPUT.PUT_LINE('C?p nh?t ?i?m s? thành công.');
+        DBMS_OUTPUT.PUT_LINE('C?p nh?t ?i?m s? thï¿½nh cï¿½ng.');
     END IF;
 EXCEPTION
     WHEN OTHERS THEN
@@ -94,25 +94,26 @@ CREATE OR REPLACE PROCEDURE PROC_THEMSINHVIEN (
     p_DIACHI IN VARCHAR2,
     p_DIENTHOAI IN VARCHAR2,
     p_MACT IN VARCHAR2,
-    p_MANGANH IN VARCHAR2
+    p_MANGANH IN VARCHAR2,
+    p_COSO
 )
 IS
     v_Count NUMBER;
 BEGIN
-    -- Ki?m tra xem MSSV ?ã t?n t?i ch?a
+    -- Ki?m tra xem MSSV ?ï¿½ t?n t?i ch?a
     SELECT COUNT(*)
     INTO v_Count
     FROM SinhVien
     WHERE MASV = p_MSSV;
 
-    -- N?u MSSV ?ã t?n t?i, thông báo l?i
+    -- N?u MSSV ?ï¿½ t?n t?i, thï¿½ng bï¿½o l?i
     IF v_Count > 0 THEN
-        RAISE_APPLICATION_ERROR(-20001, 'MSSV ?ã t?n t?i');
+        RAISE_APPLICATION_ERROR(-20001, 'MSSV ?ï¿½ t?n t?i');
     END IF;
 
-    -- N?u MSSV ch?a t?n t?i, thêm sinh viên vào b?ng SinhVien
-    INSERT INTO SINHVIEN (MASV, HOTEN, PHAI, NGSINH, DIACHI, DIENTHOAI, MACT, MANGANH) VALUES 
-    (p_MSSV, p_HOTEN, p_PHAI, TO_DATE(p_NGSINH, 'YYYY-MM-DD'), p_DIACHI, p_DIENTHOAI, p_MACT, p_MANGANH);
+    -- N?u MSSV ch?a t?n t?i, thï¿½m sinh viï¿½n vï¿½o b?ng SinhVien
+    INSERT INTO SINHVIEN (MASV, HOTEN, PHAI, NGSINH, DIACHI, DIENTHOAI, MACT, MANGANH, COSO) VALUES 
+    (p_MSSV, p_HOTEN, p_PHAI, TO_DATE(p_NGSINH, 'YYYY-MM-DD'), p_DIACHI, p_DIENTHOAI, p_MACT, p_MANGANH, p_COSO);
     
     COMMIT;
 END;
@@ -127,11 +128,12 @@ CREATE OR REPLACE PROCEDURE PROC_UPDATE_STUDENT (
     p_MACT IN VARCHAR2,
     p_MANGANH IN VARCHAR2,
     p_SOTCTL IN NUMBER,
-    p_DTBTL IN NUMBER
+    p_DTBTL IN NUMBER,
+    p_COSO IN VARCHAR2
 )
 IS
 BEGIN
-    -- C?p nh?t thông tin sinh viên
+    -- C?p nh?t thï¿½ng tin sinh viï¿½n
     UPDATE SINHVIEN
     SET HOTEN = p_TEN,
         NGSINH = p_NGSINH,
@@ -141,18 +143,19 @@ BEGIN
         MACT = p_MACT,
         MANGANH = p_MANGANH,
         SOTCTL = p_SOTCTL,
-        DTBTL = p_DTBTL
+        DTBTL = p_DTBTL,
+        COSO = p_COSO
     WHERE MASV = p_MSSV;
 
-    -- Ki?m tra xem có b?n ghi nào ???c c?p nh?t không
+    -- Ki?m tra xem cï¿½ b?n ghi nï¿½o ???c c?p nh?t khï¿½ng
     IF SQL%ROWCOUNT = 0 THEN
-        DBMS_OUTPUT.PUT_LINE('Không tìm th?y sinh viên có MSSV là ' || p_MSSV);
+        DBMS_OUTPUT.PUT_LINE('Khï¿½ng tï¿½m th?y sinh viï¿½n cï¿½ MSSV lï¿½ ' || p_MSSV);
     ELSE
-        DBMS_OUTPUT.PUT_LINE('C?p nh?t thông tin sinh viên thành công.');
+        DBMS_OUTPUT.PUT_LINE('C?p nh?t thï¿½ng tin sinh viï¿½n thï¿½nh cï¿½ng.');
     END IF;
 EXCEPTION
     WHEN OTHERS THEN
-        DBMS_OUTPUT.PUT_LINE('L?i khi c?p nh?t thông tin sinh viên: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('L?i khi c?p nh?t thï¿½ng tin sinh viï¿½n: ' || SQLERRM);
 END;
 /
 CREATE OR REPLACE PROCEDURE PROC_THEMDONVI (
@@ -162,18 +165,18 @@ CREATE OR REPLACE PROCEDURE PROC_THEMDONVI (
 IS
     v_Count NUMBER;
 BEGIN
-    -- Ki?m tra xem MSSV ?ã t?n t?i ch?a
+    -- Ki?m tra xem MSSV ?ï¿½ t?n t?i ch?a
     SELECT COUNT(*)
     INTO v_Count
     FROM DONVI
     WHERE MADV = p_MADV;
 
-    -- N?u MSSV ?ã t?n t?i, thông báo l?i
+    -- N?u MSSV ?ï¿½ t?n t?i, thï¿½ng bï¿½o l?i
     IF v_Count > 0 THEN
-        RAISE_APPLICATION_ERROR(-20001, 'MADV ?ã t?n t?i');
+        RAISE_APPLICATION_ERROR(-20001, 'MADV ?ï¿½ t?n t?i');
     END IF;
 
-    -- N?u MSSV ch?a t?n t?i, thêm sinh viên vào b?ng SinhVien
+    -- N?u MSSV ch?a t?n t?i, thï¿½m sinh viï¿½n vï¿½o b?ng SinhVien
     INSERT INTO DONVI (MADV, TENDV) VALUES 
     (p_MADV, p_TENDV);
     
@@ -188,17 +191,17 @@ IS
     v_Count NUMBER;
     v_TRGDV_COUNT NUMBER;
 BEGIN
-    -- Ki?m tra xem MADV ?ã t?n t?i ch?a
+    -- Ki?m tra xem MADV ?ï¿½ t?n t?i ch?a
     SELECT COUNT(*)
     INTO v_Count
     FROM DONVI
     WHERE MADV = p_MADV;
 
-    -- N?u MADV không t?n t?i, thông báo l?i
+    -- N?u MADV khï¿½ng t?n t?i, thï¿½ng bï¿½o l?i
     IF v_Count = 0 THEN
-        RAISE_APPLICATION_ERROR(-20001, 'MADV không t?n t?i');
+        RAISE_APPLICATION_ERROR(-20001, 'MADV khï¿½ng t?n t?i');
     END IF;
-    -- C?p nh?t thông tin c?a ??n v?
+    -- C?p nh?t thï¿½ng tin c?a ??n v?
     UPDATE DONVI
     SET TENDV = p_TENDV
     WHERE MADV = p_MADV;
@@ -222,17 +225,17 @@ CREATE OR REPLACE PROCEDURE PROC_INSERTHOCPHAN (
 IS
     v_Count INT;
 BEGIN
-    -- Ki?m tra xem MAHP ?ã t?n t?i ch?a
+    -- Ki?m tra xem MAHP ?ï¿½ t?n t?i ch?a
     SELECT COUNT(*)
     INTO v_Count
     FROM HOCPHAN
     WHERE MAHP = p_MAHP;
 
     IF v_Count > 0 THEN
-        RAISE_APPLICATION_ERROR(-20001, 'MAHP ?ã t?n t?i');
+        RAISE_APPLICATION_ERROR(-20001, 'MAHP ?ï¿½ t?n t?i');
     END IF;
 
-    -- Thêm h?c ph?n m?i vào b?ng HOCPHAN
+    -- Thï¿½m h?c ph?n m?i vï¿½o b?ng HOCPHAN
     INSERT INTO HOCPHAN (MAHP, TENHP, SOTC, STLT, STTH, SOSVTD, MADV) VALUES 
     (p_MAHP, p_TENHP, p_SOTC, p_STLT, p_STTH, p_SOSVTD, p_MADV);
     
@@ -255,18 +258,18 @@ CREATE OR REPLACE PROCEDURE PROC_UPDATEHOCPHAN (
 IS
     v_Count NUMBER;
 BEGIN
-    -- Ki?m tra xem MAHP ?ã t?n t?i ch?a
+    -- Ki?m tra xem MAHP ?ï¿½ t?n t?i ch?a
     SELECT COUNT(*)
     INTO v_Count
     FROM HOCPHAN
     WHERE MAHP = p_MAHP;
 
-    -- N?u MAHP không t?n t?i, thông báo l?i
+    -- N?u MAHP khï¿½ng t?n t?i, thï¿½ng bï¿½o l?i
     IF v_Count = 0 THEN
-        RAISE_APPLICATION_ERROR(-20001, 'Mã h?c ph?n không t?n t?i');
+        RAISE_APPLICATION_ERROR(-20001, 'Mï¿½ h?c ph?n khï¿½ng t?n t?i');
     END IF;
 
-    -- C?p nh?t thông tin h?c ph?n
+    -- C?p nh?t thï¿½ng tin h?c ph?n
     UPDATE HOCPHAN
     SET TENHP = p_TENHP,
         SOTC = p_SOTC,
@@ -288,23 +291,23 @@ CREATE OR REPLACE PROCEDURE PROC_INSERT_KHMO (
 IS
     v_Count NUMBER;
 BEGIN
-    -- Ki?m tra xem MAHP ?ã t?n t?i trong b?ng KHMO ch?a
+    -- Ki?m tra xem MAHP ?ï¿½ t?n t?i trong b?ng KHMO ch?a
     SELECT COUNT(*)
     INTO v_Count
     FROM KHMO
     WHERE MAHP = p_MAHP AND HK = p_HK AND NAM = p_NAM AND MACT = p_MACT;
 
-    -- N?u ch?a t?n t?i, thêm m?i
+    -- N?u ch?a t?n t?i, thï¿½m m?i
     IF v_Count = 0 THEN
         INSERT INTO KHMO (MAHP, HK, NAM, MACT) VALUES (p_MAHP, p_HK, p_NAM, p_MACT);
         COMMIT;
     ELSE
-        -- N?u ?ã t?n t?i, thông báo l?i
-        raise_application_error(-20001, 'Mã h?c ph?n này ?ã t?n t?i trong k? h?c và n?m h?c này.');
+        -- N?u ?ï¿½ t?n t?i, thï¿½ng bï¿½o l?i
+        raise_application_error(-20001, 'Mï¿½ h?c ph?n nï¿½y ?ï¿½ t?n t?i trong k? h?c vï¿½ n?m h?c nï¿½y.');
     END IF;
 EXCEPTION
     WHEN OTHERS THEN
-        -- X? lý l?i
+        -- X? lï¿½ l?i
         ROLLBACK;
         RAISE;
 END PROC_INSERT_KHMO;
@@ -322,15 +325,15 @@ CREATE OR REPLACE PROCEDURE PROC_UPDATE_KHMO (
 IS
     v_Count NUMBER;
 BEGIN
-    -- Ki?m tra xem giá tr? c? t?n t?i trong b?ng KHMO hay không
+    -- Ki?m tra xem giï¿½ tr? c? t?n t?i trong b?ng KHMO hay khï¿½ng
     SELECT COUNT(*)
     INTO v_Count
     FROM KHMO
     WHERE MAHP = p_MAHP_old AND HK = p_HK_old AND NAM = p_NAM_old AND MACT = p_MACT_old;
 
-    -- N?u giá tr? c? t?n t?i, ti?n hành c?p nh?t
+    -- N?u giï¿½ tr? c? t?n t?i, ti?n hï¿½nh c?p nh?t
     IF v_Count > 0 THEN
-        -- C?p nh?t thông tin m?i
+        -- C?p nh?t thï¿½ng tin m?i
         UPDATE KHMO
         SET MAHP = p_MAHP_new,
             HK = p_HK_new,
@@ -340,12 +343,12 @@ BEGIN
         
         COMMIT;
     ELSE
-        -- N?u không t?n t?i, thông báo l?i
-        raise_application_error(-20002, 'Không tìm th?y mã h?c ph?n c? trong k? h?c và n?m h?c này.');
+        -- N?u khï¿½ng t?n t?i, thï¿½ng bï¿½o l?i
+        raise_application_error(-20002, 'Khï¿½ng tï¿½m th?y mï¿½ h?c ph?n c? trong k? h?c vï¿½ n?m h?c nï¿½y.');
     END IF;
 EXCEPTION
     WHEN OTHERS THEN
-        -- X? lý l?i
+        -- X? lï¿½ l?i
         ROLLBACK;
         RAISE;
 END PROC_UPDATE_KHMO;
@@ -366,7 +369,7 @@ CREATE OR REPLACE PROCEDURE PROC_UPDATE_PHANCONG (
 IS
     v_Count NUMBER;
 BEGIN
-    -- Ki?m tra xem dòng c? t?n t?i trong b?ng PHANCONG không
+    -- Ki?m tra xem dï¿½ng c? t?n t?i trong b?ng PHANCONG khï¿½ng
     SELECT COUNT(*)
     INTO v_Count
     FROM PHANCONG
@@ -376,7 +379,7 @@ BEGIN
       AND NAM = p_NAM_old
       AND MACT = p_MACT_old;
 
-    -- N?u t?n t?i dòng c?, thì c?p nh?t
+    -- N?u t?n t?i dï¿½ng c?, thï¿½ c?p nh?t
     IF v_Count > 0 THEN
         UPDATE PHANCONG
         SET MAGV = p_MAGV_new,
@@ -392,12 +395,12 @@ BEGIN
 
         COMMIT;
     ELSE
-        -- N?u không tìm th?y dòng c?, báo l?i
-        RAISE_APPLICATION_ERROR(-20002, 'Không tìm th?y dòng d? li?u c?.');
+        -- N?u khï¿½ng tï¿½m th?y dï¿½ng c?, bï¿½o l?i
+        RAISE_APPLICATION_ERROR(-20002, 'Khï¿½ng tï¿½m th?y dï¿½ng d? li?u c?.');
     END IF;
 EXCEPTION
     WHEN OTHERS THEN
-        -- X? lý ngo?i l?
+        -- X? lï¿½ ngo?i l?
         ROLLBACK;
         RAISE;
 END PROC_UPDATE_PHANCONG;
@@ -415,7 +418,7 @@ CREATE OR REPLACE PROCEDURE PROC_INSERT_DANGKY (
 IS
     v_Count NUMBER;
 BEGIN
-    -- Ki?m tra xem d? li?u ?ã t?n t?i trong b?ng DANGKY ch?a
+    -- Ki?m tra xem d? li?u ?ï¿½ t?n t?i trong b?ng DANGKY ch?a
     SELECT COUNT(*)
     INTO v_Count
     FROM DANGKY
@@ -426,12 +429,12 @@ BEGIN
         AND NAM = p_NAM
         AND MACT = p_MACT;
 
-    -- N?u d? li?u ?ã t?n t?i, thông báo l?i
+    -- N?u d? li?u ?ï¿½ t?n t?i, thï¿½ng bï¿½o l?i
     IF v_Count > 0 THEN
-        RAISE_APPLICATION_ERROR(-20001, 'D? li?u ?ã t?n t?i trong b?ng DANGKY.');
+        RAISE_APPLICATION_ERROR(-20001, 'D? li?u ?ï¿½ t?n t?i trong b?ng DANGKY.');
     END IF;
 
-    -- N?u d? li?u ch?a t?n t?i, thêm m?i vào b?ng DANGKY
+    -- N?u d? li?u ch?a t?n t?i, thï¿½m m?i vï¿½o b?ng DANGKY
     INSERT INTO DANGKY (MASV, MAGV, MAHP, HK, NAM, MACT)
     VALUES (p_MASV, p_MAGV, p_MAHP, p_HK, p_NAM, p_MACT);
     
@@ -459,12 +462,12 @@ BEGIN
 
     COMMIT;
 
-    DBMS_OUTPUT.PUT_LINE('D? li?u ?ã ???c xóa thành công.');
+    DBMS_OUTPUT.PUT_LINE('D? li?u ?ï¿½ ???c xï¿½a thï¿½nh cï¿½ng.');
 EXCEPTION
     WHEN OTHERS THEN
-        -- X? lý l?i
+        -- X? lï¿½ l?i
         ROLLBACK;
-        DBMS_OUTPUT.PUT_LINE('L?i khi xóa d? li?u: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('L?i khi xï¿½a d? li?u: ' || SQLERRM);
 END PROC_DELETE_DANGKY;
 /
 
@@ -488,12 +491,12 @@ BEGIN
 
     COMMIT;
 
-    DBMS_OUTPUT.PUT_LINE('D? li?u ?ã ???c xóa thành công.');
+    DBMS_OUTPUT.PUT_LINE('D? li?u ?ï¿½ ???c xï¿½a thï¿½nh cï¿½ng.');
 EXCEPTION
     WHEN OTHERS THEN
-        -- X? lý l?i
+        -- X? lï¿½ l?i
         ROLLBACK;
-        DBMS_OUTPUT.PUT_LINE('L?i khi xóa d? li?u: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('L?i khi xï¿½a d? li?u: ' || SQLERRM);
 END PROC_DELETE_PHANCONG;
 /
 
@@ -515,7 +518,7 @@ BEGIN
 EXCEPTION
     WHEN OTHERS THEN
         ROLLBACK;
-        DBMS_OUTPUT.PUT_LINE('L?i khi chèn d? li?u: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('L?i khi chï¿½n d? li?u: ' || SQLERRM);
 END PROC_INSERT_PHANCONG;
 /
 
@@ -535,7 +538,7 @@ CREATE OR REPLACE PROCEDURE PROC_UPDATE_PHANCONG (
 IS
     v_Count NUMBER;
 BEGIN
-    -- Ki?m tra xem dòng c? t?n t?i trong b?ng PHANCONG không
+    -- Ki?m tra xem dï¿½ng c? t?n t?i trong b?ng PHANCONG khï¿½ng
     SELECT COUNT(*)
     INTO v_Count
     FROM PHANCONG
@@ -545,7 +548,7 @@ BEGIN
       AND NAM = p_NAM_old
       AND MACT = p_MACT_old;
 
-    -- N?u t?n t?i dòng c?, thì c?p nh?t
+    -- N?u t?n t?i dï¿½ng c?, thï¿½ c?p nh?t
     IF v_Count > 0 THEN
         UPDATE PHANCONG
         SET MAGV = p_MAGV_new,
@@ -561,12 +564,12 @@ BEGIN
 
         COMMIT;
     ELSE
-        -- N?u không tìm th?y dòng c?, báo l?i
-        RAISE_APPLICATION_ERROR(-20002, 'Không tìm th?y dòng d? li?u c?.');
+        -- N?u khï¿½ng tï¿½m th?y dï¿½ng c?, bï¿½o l?i
+        RAISE_APPLICATION_ERROR(-20002, 'Khï¿½ng tï¿½m th?y dï¿½ng d? li?u c?.');
     END IF;
 EXCEPTION
     WHEN OTHERS THEN
-        -- X? lý ngo?i l?
+        -- X? lï¿½ ngo?i l?
         ROLLBACK;
         RAISE;
 END PROC_UPDATE_PHANCONG;
@@ -595,12 +598,12 @@ BEGIN
 
     COMMIT;
 
-    DBMS_OUTPUT.PUT_LINE('D? li?u ?ã ???c xóa thành công.');
+    DBMS_OUTPUT.PUT_LINE('D? li?u ?ï¿½ ???c xï¿½a thï¿½nh cï¿½ng.');
 EXCEPTION
     WHEN OTHERS THEN
-        -- X? lý l?i
+        -- X? lï¿½ l?i
         ROLLBACK;
-        DBMS_OUTPUT.PUT_LINE('L?i khi xóa d? li?u: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('L?i khi xï¿½a d? li?u: ' || SQLERRM);
 END PROC_DELETE_PHANCONG;
 /
 
@@ -623,7 +626,7 @@ BEGIN
 EXCEPTION
     WHEN OTHERS THEN
         ROLLBACK;
-        DBMS_OUTPUT.PUT_LINE('L?i khi chèn d? li?u: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('L?i khi chï¿½n d? li?u: ' || SQLERRM);
 END PROC_INSERT_PHANCONG;
 /
 
@@ -641,18 +644,18 @@ CREATE OR REPLACE PROCEDURE PROC_INSERT_NHANSU (
 AS
     v_NGSINH DATE;
 BEGIN
-    -- Chuy?n ??i ngày sinh t? chu?i thành ki?u DATE
+    -- Chuy?n ??i ngï¿½y sinh t? chu?i thï¿½nh ki?u DATE
     v_NGSINH := TO_DATE(p_NGSINH, 'yyyy-mm-dd');
 
     INSERT INTO NHANSU (MANV, HOTEN, PHAI, NGSINH, PHUCAP, DIENTHOAI, VAITRO, MADV)
     VALUES (p_MANV, p_HOTEN, p_PHAI, v_NGSINH, p_PHUCAP, p_DIENTHOAI, p_VAITRO, p_MADV);
 
     COMMIT;
-    DBMS_OUTPUT.PUT_LINE('Thêm nhân s? thành công.');
+    DBMS_OUTPUT.PUT_LINE('Thï¿½m nhï¿½n s? thï¿½nh cï¿½ng.');
 EXCEPTION
     WHEN OTHERS THEN
         ROLLBACK;
-        DBMS_OUTPUT.PUT_LINE('L?i khi thêm nhân s?: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('L?i khi thï¿½m nhï¿½n s?: ' || SQLERRM);
 END PROC_INSERT_NHANSU;
 /
 
@@ -672,31 +675,31 @@ CREATE OR REPLACE PROCEDURE PROC_UPDATE_NHANSU (
 AS
     v_NGSINH DATE;
 BEGIN
-    -- Chuy?n ??i chu?i ngày sinh thành ki?u DATE
+    -- Chuy?n ??i chu?i ngï¿½y sinh thï¿½nh ki?u DATE
     v_NGSINH := TO_DATE(p_NGSINH, 'yyyy-mm-dd');
     
-    -- Th?c hi?n c?p nh?t thông tin nhân s?
+    -- Th?c hi?n c?p nh?t thï¿½ng tin nhï¿½n s?
     UPDATE NHANSU
     SET HOTEN = p_HOTEN,
         PHAI = p_PHAI,
-        NGSINH = v_NGSINH, -- S? d?ng ngày sinh ?ã chuy?n ??i
+        NGSINH = v_NGSINH, -- S? d?ng ngï¿½y sinh ?ï¿½ chuy?n ??i
         PHUCAP = p_PHUCAP,
         DIENTHOAI = p_DIENTHOAI,
         VAITRO = p_VAITRO,
         MADV = p_MADV
     WHERE MANV = p_MANV;
 
-    -- Commit n?u không có l?i
+    -- Commit n?u khï¿½ng cï¿½ l?i
     COMMIT;
     
-    -- Thông báo thành công
-    DBMS_OUTPUT.PUT_LINE('C?p nh?t thông tin nhân s? thành công.');
+    -- Thï¿½ng bï¿½o thï¿½nh cï¿½ng
+    DBMS_OUTPUT.PUT_LINE('C?p nh?t thï¿½ng tin nhï¿½n s? thï¿½nh cï¿½ng.');
 EXCEPTION
     WHEN OTHERS THEN
-        -- Rollback n?u có l?i
+        -- Rollback n?u cï¿½ l?i
         ROLLBACK;
-        -- Thông báo l?i
-        DBMS_OUTPUT.PUT_LINE('L?i khi c?p nh?t thông tin nhân s?: ' || SQLERRM);
+        -- Thï¿½ng bï¿½o l?i
+        DBMS_OUTPUT.PUT_LINE('L?i khi c?p nh?t thï¿½ng tin nhï¿½n s?: ' || SQLERRM);
 END PROC_UPDATE_NHANSU;
 /
 

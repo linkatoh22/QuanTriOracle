@@ -58,6 +58,7 @@ namespace QuanTriTrongOracle.TabGVU
             string phone = SDTTxt.Text;
             string ctdt = CTDTTxt.Text;
             string nganh = NganhTxt.Text;
+            string coso = CoSoTxt.Text;
             if (mssv.Length == 0 || name.Length == 0 || gender.Length == 0 || address.Length == 0 || phone.Length == 0 || ctdt.Length == 0 || nganh.Length == 0)
             {
                 MessageBox.Show("CHƯA NHẬP ĐẦY ĐỦ DỮ LIỆU");
@@ -82,7 +83,7 @@ namespace QuanTriTrongOracle.TabGVU
                 command.Parameters.Add("p_DIENTHOAI", OracleDbType.Varchar2).Value = phone;
                 command.Parameters.Add("p_MACT", OracleDbType.Varchar2).Value = ctdt;
                 command.Parameters.Add("p_MANGANH", OracleDbType.Varchar2).Value = nganh;
-
+                command.Parameters.Add("p_COSO", OracleDbType.Varchar2).Value = coso;
                 command.ExecuteNonQuery();
 
                 MessageBox.Show("THÊM SINH VIÊN THÀNH CÔNG");
@@ -152,6 +153,7 @@ namespace QuanTriTrongOracle.TabGVU
                             NganhUpdTxt.Text = reader.GetString(reader.GetOrdinal("MANGANH"));
                             TCTLUpdTxt.Text = reader.GetInt32(reader.GetOrdinal("SOTCTL")).ToString();
                             DTBTLUpdTxt.Text = reader.GetDecimal(reader.GetOrdinal("DTBTL")).ToString();
+                            CoSoUpdTxt.Text = reader.GetString(reader.GetOrdinal("COSO"));
                         }
                         else
                         {
@@ -187,6 +189,7 @@ namespace QuanTriTrongOracle.TabGVU
             string phone = PhoneUpdTxt.Text;
             string ctdt = CTDTUpdTxt.Text;
             string nganh = NganhUpdTxt.Text;
+            string coso = CoSoUpdTxt.Text;
             string tctl = TCTLUpdTxt.Text;
             string dtb = DTBTLUpdTxt.Text;
 
@@ -222,6 +225,7 @@ namespace QuanTriTrongOracle.TabGVU
                     cmd.Parameters.Add("p_MANGANH", OracleDbType.Varchar2).Value = nganh;
                     cmd.Parameters.Add("p_SOTCTL", OracleDbType.Int32).Value = int.Parse(tctl);
                     cmd.Parameters.Add("p_DTBTL", OracleDbType.Decimal).Value = decimal.Parse(dtb);
+                    cmd.Parameters.Add("p_COSO", OracleDbType.Varchar2).Value = coso;
 
                     // Thực thi truy vấn UPDATE
                     cmd.ExecuteNonQuery();

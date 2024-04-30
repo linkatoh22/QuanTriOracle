@@ -203,6 +203,7 @@
             this.KHMoUpdDataGrid.RowTemplate.Height = 24;
             this.KHMoUpdDataGrid.Size = new System.Drawing.Size(843, 192);
             this.KHMoUpdDataGrid.TabIndex = 84;
+            this.KHMoUpdDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.KHMoUpdDataGrid_CellContentClick);
             // 
             // UpdateKHMoBtn
             // 

@@ -463,6 +463,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TabGVU\GVU_DonVi.resx">
+      <DependentUpon>GVU_DonVi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabGVU\GVU_KHMo.resx">
+      <DependentUpon>GVU_KHMo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabGVU\GVU_SinhVien.resx">
+      <DependentUpon>GVU_SinhVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TabTDV\TDV_DangKy.resx">
       <DependentUpon>TDV_DangKy.cs</DependentUpon>
     </EmbeddedResource>
