@@ -50,8 +50,8 @@ namespace QuanTriTrongOracle.TabSC
             con.Open();
             OracleCommand cmd = new OracleCommand("ADMINQL.PROC_UPDATESINHVIEN", con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("DT", "varchar2").Value = phone_SC.Text;
             cmd.Parameters.Add("DCHI", "varchar2").Value = diachi_SC.Text;
+            cmd.Parameters.Add("DT", "varchar2").Value = phone_SC.Text;
             cmd.ExecuteNonQuery();
             MessageBox.Show("Update thông tin thành công");
             con.Close();

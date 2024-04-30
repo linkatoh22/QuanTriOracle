@@ -152,7 +152,7 @@ namespace QuanTriTrongOracle
                                         Noti Tb_sv = new Noti();
                                         Tb_sv.Show();
                                     break;
-                                    case "DBA":
+                                    case "RESOURCE":
                                         NavAD navAD = new NavAD();
                                         navAD.Show();
                                         break;
