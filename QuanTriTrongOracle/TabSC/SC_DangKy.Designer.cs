@@ -84,6 +84,7 @@
             this.mahp_del.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mahp_del.Location = new System.Drawing.Point(98, 431);
             this.mahp_del.Name = "mahp_del";
+            this.mahp_del.ReadOnly = true;
             this.mahp_del.Size = new System.Drawing.Size(150, 22);
             this.mahp_del.TabIndex = 10;
             this.mahp_del.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -93,6 +94,7 @@
             this.hk_del.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hk_del.Location = new System.Drawing.Point(98, 491);
             this.hk_del.Name = "hk_del";
+            this.hk_del.ReadOnly = true;
             this.hk_del.Size = new System.Drawing.Size(150, 22);
             this.hk_del.TabIndex = 11;
             // 
@@ -101,6 +103,7 @@
             this.nam_del.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nam_del.Location = new System.Drawing.Point(98, 553);
             this.nam_del.Name = "nam_del";
+            this.nam_del.ReadOnly = true;
             this.nam_del.Size = new System.Drawing.Size(150, 22);
             this.nam_del.TabIndex = 12;
             // 

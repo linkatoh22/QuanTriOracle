@@ -1,9 +1,12 @@
 -- Dang nhap ADMINQL
 -- 1. Kich hoat viec ghi nhat ky he thong 
+-- sys
+ALTER SESSION SET CONTAINER=CDB$ROOT;
 alter system set audit_trail=db,extended scope=spfile;
 shutdown immediate;
 startup
 
+--adminql
 -- 2. Thuc hien ghi nhat ky he thong dung Standard audit
 -- Kiem soat cac user tren tat ca cac table
 AUDIT ALL ON ADMINQL.NHANSU BY ACCESS;
@@ -28,4 +31,4 @@ AUDIT ALL WHENEVER SUCCESSFUL;
 AUDIT ALL WHENEVER NOT SUCCESSFUL;
 
 -- Kiem tra audit
-SELECT extended_timestamp, username, owner, obj_name, action_name, sql_text FROM dba_audit_trail;
+--SELECT extended_timestamp, username, owner, obj_name, action_name, sql_text FROM dba_audit_trail;
