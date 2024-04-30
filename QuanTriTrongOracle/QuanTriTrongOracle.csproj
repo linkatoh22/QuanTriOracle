@@ -161,6 +161,12 @@
     <Compile Include="NavTK.Designer.cs">
       <DependentUpon>NavTK.cs</DependentUpon>
     </Compile>
+    <Compile Include="NavTK2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavTK2.Designer.cs">
+      <DependentUpon>NavTK2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Noti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -361,6 +367,24 @@
     <Compile Include="TabTDV\TDV_PCHP.Designer.cs">
       <DependentUpon>TDV_PCHP.cs</DependentUpon>
     </Compile>
+    <Compile Include="TabTK\TK_All.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTK\TK_All.Designer.cs">
+      <DependentUpon>TK_All.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabTK\TK_NhanSu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTK\TK_NhanSu.Designer.cs">
+      <DependentUpon>TK_NhanSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabTK\TK_PhanCong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabTK\TK_PhanCong.Designer.cs">
+      <DependentUpon>TK_PhanCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tab\DetailUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -421,6 +445,12 @@
     <EmbeddedResource Include="NavTDV.resx">
       <DependentUpon>NavTDV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NavTK.resx">
+      <DependentUpon>NavTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavTK2.resx">
+      <DependentUpon>NavTK2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Noti.resx">
       <DependentUpon>Noti.cs</DependentUpon>
     </EmbeddedResource>
@@ -468,6 +498,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TabTDV\TDV_PCHP.resx">
       <DependentUpon>TDV_PCHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabTK\TK_All.resx">
+      <DependentUpon>TK_All.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabTK\TK_NhanSu.resx">
+      <DependentUpon>TK_NhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabTK\TK_PhanCong.resx">
+      <DependentUpon>TK_PhanCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tab\DetailUser.resx">
       <DependentUpon>DetailUser.cs</DependentUpon>

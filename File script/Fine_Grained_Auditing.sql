@@ -1,5 +1,6 @@
 --FGA
 --MO PHONG LAI QUA TRINH SINH VIEN CAP NHAT DIEM CUA MINH 
+
 CREATE OR REPLACE FUNCTION AUDITIF_DK
 RETURN NUMBER 
 AS
@@ -13,7 +14,6 @@ END IF;
 END;
 /
 
-alter session set current_schema =  SYS;
 BEGIN 
     DBMS_FGA.DROP_POLICY(
         object_schema     => 'ADMINQL',
@@ -36,8 +36,6 @@ BEGIN
     );
 END;
 /
-alter session set current_schema =  ADMINQL;
-GRANT SELECT, UPDATE ON DANGKY TO S001;
 
 --MO PHONG HANH VI NGUOI DUNG NAY DOC DUOC PHU CAP CUA NGUOI DUNG KHAC
 alter session set current_schema =  SYS;
@@ -71,5 +69,4 @@ SELECT * FROM SYS.FGA_LOG$;
 --DANG NHAP VOI ACCOUNT BAT KY VA CHON LENH NAY
 select PHUCAP from adminql.nhansu where manv = 'N005';
 --KIEM TRA BANG LENH SAU 
-DELETE FROM SYS.FGA_LOG$;
 SELECT DBUID, LSQLTEXT, NTIMESTAMP# FROM SYS.FGA_LOG$;

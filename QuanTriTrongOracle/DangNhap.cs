@@ -140,7 +140,7 @@ namespace QuanTriTrongOracle
                                         Tb_tdv.Show();
                                         break;
                                     case "TRUONGKHOA":
-                                        NavTK navTK = new NavTK();
+                                        NavTK2 navTK = new NavTK2();
                                         navTK.Show();
                                         Noti Tb_tk = new Noti();
                                         Tb_tk.Show();

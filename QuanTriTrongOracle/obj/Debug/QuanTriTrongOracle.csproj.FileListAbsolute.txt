@@ -236,3 +236,8 @@ C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System
 C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.ValueTuple.xml
 C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.CopyComplete
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTK.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTK2.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTK.TK_All.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTK.TK_NhanSu.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTK.TK_PhanCong.resources
