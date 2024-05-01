@@ -30,7 +30,7 @@ namespace QuanTriTrongOracle.TabTDV
         {
             con.Open();
             OracleCommand getEmps = con.CreateCommand();
-            getEmps.CommandText = "SELECT * FROM ADMINQL.NHANSU";
+            getEmps.CommandText = "SELECT * FROM ADMINQL.NHANSU WHERE MANV = SYS_CONTEXT('USERENV','SESSION_USER')";
             getEmps.CommandType = CommandType.Text;
             OracleDataReader empDR = getEmps.ExecuteReader();
             DataTable empDT = new DataTable();

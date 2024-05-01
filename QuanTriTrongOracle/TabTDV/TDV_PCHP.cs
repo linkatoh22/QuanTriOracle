@@ -249,7 +249,8 @@ namespace QuanTriTrongOracle.TabTDV
             con.Open();
             try
             {
-                string query = "SELECT * FROM ADMINQL.KHMO";
+                string query = "SELECT * FROM ADMINQL.KHMO WHERE MAHP IN (SELECT MAHP FROM ADMINQL.HOCPHAN WHERE MADV = (SELECT MADV FROM ADMINQL.DONVI WHERE TRGDV=SYS_CONTEXT('USERENV','SESSION_USER')))";
+               // string query = "SELECT * FROM ADMINQL.KHMO";
                 using (OracleCommand cmd = new OracleCommand(query, con))
                 {
                     using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
