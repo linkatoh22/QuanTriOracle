@@ -159,7 +159,7 @@
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(217, 25);
             this.label63.TabIndex = 83;
-            this.label63.Text = "Chỉnh sửa phân công";
+            this.label63.Text = "Xem, Chỉnh sửa phân công";
             // 
             // LoadPCUpdBtn
             // 
