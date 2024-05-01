@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_xem2 = new System.Windows.Forms.Button();
             this.btn_xem1 = new System.Windows.Forms.Button();
-            this.cbox_1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -93,7 +92,7 @@
             // btn_xem1
             // 
             this.btn_xem1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btn_xem1.Location = new System.Drawing.Point(328, 78);
+            this.btn_xem1.Location = new System.Drawing.Point(158, 78);
             this.btn_xem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_xem1.Name = "btn_xem1";
             this.btn_xem1.Size = new System.Drawing.Size(82, 36);
@@ -101,19 +100,6 @@
             this.btn_xem1.Text = "Xem";
             this.btn_xem1.UseVisualStyleBackColor = true;
             this.btn_xem1.Click += new System.EventHandler(this.btn_xem1_Click);
-            // 
-            // cbox_1
-            // 
-            this.cbox_1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cbox_1.FormattingEnabled = true;
-            this.cbox_1.Items.AddRange(new object[] {
-            "DANGKY (CAPNHAT)",
-            "NHANSU (PHUCAP)"});
-            this.cbox_1.Location = new System.Drawing.Point(119, 78);
-            this.cbox_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbox_1.Name = "cbox_1";
-            this.cbox_1.Size = new System.Drawing.Size(194, 36);
-            this.cbox_1.TabIndex = 4;
             // 
             // label2
             // 
@@ -134,7 +120,6 @@
             this.ClientSize = new System.Drawing.Size(917, 672);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_xem1);
-            this.Controls.Add(this.cbox_1);
             this.Controls.Add(this.btn_xem2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv);
@@ -156,7 +141,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_xem2;
         private System.Windows.Forms.Button btn_xem1;
-        private System.Windows.Forms.ComboBox cbox_1;
         private System.Windows.Forms.Label label2;
     }
 }

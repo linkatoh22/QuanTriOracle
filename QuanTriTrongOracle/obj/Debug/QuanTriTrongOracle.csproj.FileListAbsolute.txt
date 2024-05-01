@@ -320,3 +320,4 @@ C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.cspr
 C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.CopyComplete
 C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.exe
 C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.pdb
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_HocPhan.resources

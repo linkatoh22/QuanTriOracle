@@ -151,9 +151,9 @@ namespace QuanTriTrongOracle.TabGVU
                             PhoneUpdTxt.Text = reader.GetString(reader.GetOrdinal("DIENTHOAI"));
                             CTDTUpdTxt.Text = reader.GetString(reader.GetOrdinal("MACT"));
                             NganhUpdTxt.Text = reader.GetString(reader.GetOrdinal("MANGANH"));
+                            CoSoUpdTxt.Text = reader.GetString(reader.GetOrdinal("COSO"));
                             TCTLUpdTxt.Text = reader.GetInt32(reader.GetOrdinal("SOTCTL")).ToString();
                             DTBTLUpdTxt.Text = reader.GetDecimal(reader.GetOrdinal("DTBTL")).ToString();
-                            CoSoUpdTxt.Text = reader.GetString(reader.GetOrdinal("COSO"));
                         }
                         else
                         {

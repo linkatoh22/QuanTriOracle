@@ -172,5 +172,58 @@ namespace QuanTriTrongOracle.TabGVU
                 }
             }
         }
+
+        private void LoadHPUpdBtn_Click(object sender, EventArgs e)
+        {
+            string mahp = MaHPUpdTxt.Text;
+            if (mahp.Length == 0)
+            {
+                MessageBox.Show("VUI LÒNG NHẬP MÃ HỌC PHẦN");
+                return;
+            }
+
+            OracleConnection con = null;
+            try
+            {
+                con = connect.getConnection();
+                con.Open();
+
+                string query = "SELECT * FROM ADMINQL.HOCPHAN WHERE MAHP = :mahp";
+                using (OracleCommand cmd = new OracleCommand(query, con))
+                {
+                    cmd.Parameters.Add("mahp", OracleDbType.Varchar2).Value = mahp;
+
+                    using (OracleDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // Lấy dữ liệu từ OracleDataReader và gán vào các TextBox
+                            MaHPUpdTxt.Text = reader.GetString(reader.GetOrdinal("MAHP"));
+                            TenHPUpdTxt.Text = reader.GetString(reader.GetOrdinal("TENHP"));
+                            SoTCUpdTxt.Text = reader.GetString(reader.GetOrdinal("SOTC"));
+                            SoSVTDUpdTxt.Text = reader.GetString(reader.GetOrdinal("SOSVTD"));
+                            MaDVHPUPdTxt.Text = reader.GetString(reader.GetOrdinal("MADV"));
+                            SoTietTHUpdTxt.Text = reader.GetString(reader.GetOrdinal("STTH"));
+                            SoTietLTUpdTxt.Text = reader.GetString(reader.GetOrdinal("STLT"));
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy học phần có MAHP này");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải thông tin học phần: " + ex.Message);
+            }
+            finally
+            {
+                if (con != null && con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+            }
+        }
     }
 }

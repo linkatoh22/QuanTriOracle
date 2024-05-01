@@ -48,17 +48,7 @@ namespace QuanTriTrongOracle
 
         private void btn_xem1_Click(object sender, EventArgs e)
         {
-            if (cbox_1.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Vui lòng chọn Fine Grained Audit", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            String s = cbox_1.Text.Trim();
-            string[] words = s.Split('(');
-
-            string[] words2 = words[1].Split(')');
-            String s2 = words2[0];
-            Load("SELECT DBUID, LSQLTEXT, NTIMESTAMP# FROM SYS.FGA_LOG$ WHERE LSQLTEXT LIKE '%" + words2[0] + "%'", 3);
+            Load("SELECT DBUID, LSQLTEXT, NTIMESTAMP# FROM SYS.FGA_LOG$ WHERE LSQLTEXT LIKE '%ADMINQL.DANGKY%' OR LSQLTEXT LIKE '%ADMINQL.NHANSU%'", 3);
         }
 
         private void btn_xem2_Click(object sender, EventArgs e)

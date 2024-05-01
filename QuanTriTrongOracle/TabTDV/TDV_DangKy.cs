@@ -83,57 +83,41 @@ namespace QuanTriTrongOracle.TabTDV
             }
             con.Close();
         }
-        
+
         private void UpdateDiem_Click(object sender, EventArgs e)
         {
-            
-            string diemThi1  = textBox2.Text;
-            string diemQT1 = textBox3.Text;
-            string diemCK1 = textBox4.Text;
-            string diemTK1 = textBox5.Text;
-
-            // Kiểm tra xem các trường thông tin đã được nhập đủ chưa
-            if (diemThi1.Length == 0 || diemQT1.Length == 0 || diemCK1.Length == 0 || diemTK1.Length == 0) {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin.");
-                return;
-            } 
-
-            // Lấy dữ liệu từ các TextBox và chuyển đổi sang dạng số
-            decimal diemThi = decimal.Parse(textBox2.Text);
-            decimal diemQt = decimal.Parse(textBox3.Text);
-            decimal diemCk = decimal.Parse(textBox4.Text);
-            decimal diemTk = decimal.Parse(textBox5.Text);
-
-            // Kiểm tra dữ liệu hợp lệ (ví dụ: có thể thêm kiểm tra để đảm bảo rằng điểm nằm trong khoảng từ 0 đến 10)
-
-            // Thực hiện cập nhật vào cơ sở dữ liệu
             try
             {
-                con = connect.getConnection();
+                string masv = textBox7.Text;
+                string magv = textBox8.Text;
+                string mahp = textBox9.Text;
+                string mact = textBox1.Text;
+                int hk = int.Parse(textBox10.Text);
+                int nam = int.Parse(textBox6.Text);
+                decimal diemThi = decimal.Parse(textBox2.Text);
+                decimal diemQt = decimal.Parse(textBox3.Text);
+                decimal diemCk = decimal.Parse(textBox4.Text);
+                decimal diemTk = decimal.Parse(textBox5.Text);
+
+                OracleConnection con = connect.getConnection();
                 con.Open();
 
                 using (OracleCommand cmd = new OracleCommand("ADMINQL.PROC_UPDATE_DIEMSO", con))
                 {
-                    cmd.Parameters.Add(":diemThi", OracleDbType.Decimal).Value = diemThi;
-                    cmd.Parameters.Add(":diemQt", OracleDbType.Decimal).Value = diemQt;
-                    cmd.Parameters.Add(":diemCk", OracleDbType.Decimal).Value = diemCk;
-                    cmd.Parameters.Add(":diemTk", OracleDbType.Decimal).Value = diemTk;
-                    cmd.Parameters.Add(":maSv", OracleDbType.Varchar2).Value = textBox7.Text;
-                    cmd.Parameters.Add(":maGv", OracleDbType.Varchar2).Value = textBox8.Text;
-                    cmd.Parameters.Add(":maHp", OracleDbType.Varchar2).Value = textBox9.Text;
-                    cmd.Parameters.Add(":hocKy", OracleDbType.Int32).Value = textBox10.Text;
-                    cmd.Parameters.Add(":nam", OracleDbType.Decimal).Value = textBox6.Text;
-                    cmd.Parameters.Add(":maCT", OracleDbType.Varchar2).Value = textBox1.Text;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("p_MASV", OracleDbType.Varchar2).Value = masv;
+                    cmd.Parameters.Add("p_MAGV", OracleDbType.Varchar2).Value = magv;
+                    cmd.Parameters.Add("p_MAHP", OracleDbType.Varchar2).Value = mahp;
+                    cmd.Parameters.Add("p_HK", OracleDbType.Int32).Value = hk;// Sử dụng OracleDbType.Decimal
+                    cmd.Parameters.Add("p_NAM", OracleDbType.Decimal).Value = nam;
+                    cmd.Parameters.Add("p_MACT", OracleDbType.Varchar2).Value = mact;
+                    cmd.Parameters.Add("p_DIEMTHI", OracleDbType.Decimal).Value = diemThi;
+                    cmd.Parameters.Add("p_DIEMQT", OracleDbType.Decimal).Value = diemQt;
+                    cmd.Parameters.Add("p_DIEMCK", OracleDbType.Decimal).Value = diemCk;
+                    cmd.Parameters.Add("p_DIEMTK", OracleDbType.Decimal).Value = diemTk;
 
-                    int rowsUpdated = cmd.ExecuteNonQuery();
-                    if (rowsUpdated > 0)
-                    {
-                        MessageBox.Show("Cập nhật điểm số thành công.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không có dữ liệu nào được cập nhật.");
-                    }
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cập nhật điểm số thành công.");
                 }
             }
             catch (Exception ex)

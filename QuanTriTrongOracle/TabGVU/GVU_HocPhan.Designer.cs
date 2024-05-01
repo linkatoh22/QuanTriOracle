@@ -221,6 +221,7 @@
             this.LoadHPUpdBtn.TabIndex = 104;
             this.LoadHPUpdBtn.Text = "Load data";
             this.LoadHPUpdBtn.UseVisualStyleBackColor = true;
+            this.LoadHPUpdBtn.Click += new System.EventHandler(this.LoadHPUpdBtn_Click);
             // 
             // MaHPUpdTxt
             // 
