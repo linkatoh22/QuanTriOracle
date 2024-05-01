@@ -197,11 +197,41 @@ namespace QuanTriTrongOracle.TabGVU
             }
             finally
             {
-                // Đảm bảo rằng kết nối sẽ được đóng ngay cả khi có ngoại lệ xảy ra
                 if (con != null && con.State == ConnectionState.Open)
                 {
                     con.Close();
                 }
+            }
+        }
+
+        private void PCDKDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                MessageBox.Show("BẠN CHỌN DÒNG " + e.RowIndex.ToString());
+                // Lấy dòng được chọn từ DataGridView
+                DataGridViewRow row = PCDKDataGrid.Rows[e.RowIndex];
+                MaGVDKInsTxt.Text = row.Cells["MAGV"].Value.ToString();
+                MaHPDKInsTxt.Text = row.Cells["MAHP"].Value.ToString();
+                HKDKInsTxt.Text = Convert.ToInt32(row.Cells["HK"].Value).ToString();
+                NamDKInsTxt.Text = Convert.ToInt32(row.Cells["NAM"].Value).ToString();
+                MaCTDKInsTxt.Text = row.Cells["MACT"].Value.ToString();
+            }
+        }
+
+        private void DKDelDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                MessageBox.Show("BẠN CHỌN DÒNG " + e.RowIndex.ToString());
+                // Lấy dòng được chọn từ DataGridView
+                DataGridViewRow row = DKDelDataGrid.Rows[e.RowIndex];
+                MaSVDKDelTxt.Text = row.Cells["MASV"].Value.ToString();
+                MaGVDKDelTxt.Text = row.Cells["MAGV"].Value.ToString();
+                MaHPDKDelTxt.Text = row.Cells["MAHP"].Value.ToString();
+                HKDKDelTxt.Text = Convert.ToInt32(row.Cells["HK"].Value).ToString();
+                NamDKDelTxt.Text = Convert.ToInt32(row.Cells["NAM"].Value).ToString();
+                MaCTDKDelTxt.Text = row.Cells["MACT"].Value.ToString();
             }
         }
     }

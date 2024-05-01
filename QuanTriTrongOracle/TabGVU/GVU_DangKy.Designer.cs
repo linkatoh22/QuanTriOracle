@@ -162,6 +162,7 @@
             this.PCDKDataGrid.RowTemplate.Height = 24;
             this.PCDKDataGrid.Size = new System.Drawing.Size(843, 167);
             this.PCDKDataGrid.TabIndex = 90;
+            this.PCDKDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PCDKDataGrid_CellContentClick);
             // 
             // InsertDKBtn
             // 
@@ -382,6 +383,7 @@
             this.DKDelDataGrid.RowTemplate.Height = 24;
             this.DKDelDataGrid.Size = new System.Drawing.Size(843, 167);
             this.DKDelDataGrid.TabIndex = 98;
+            this.DKDelDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DKDelDataGrid_CellContentClick);
             // 
             // label71
             // 

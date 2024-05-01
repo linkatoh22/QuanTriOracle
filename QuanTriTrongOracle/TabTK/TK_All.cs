@@ -22,6 +22,7 @@ namespace QuanTriTrongOracle.TabTK
         private void LoadTableBtn_Click(object sender, EventArgs e)
         {
             // Thêm các mục vào ComboBox
+            TableNameCB.Items.Clear();
             TableNameCB.Items.Add("NHANSU");
             TableNameCB.Items.Add("SINHVIEN");
             TableNameCB.Items.Add("DONVI");
