@@ -60,7 +60,7 @@ namespace QuanTriTrongOracle.TabGVU
             try
             {
                 string query = @"SELECT * FROM ADMINQL.PHANCONG WHERE 
-                                 MAGV IN (SELECT MANV FROM ADMINQL.NHANSU WHERE MADV = 'DVVPK')";
+                                 MAHP IN (SELECT MAHP FROM ADMINQL.HOCPHAN WHERE MADV = 'VPK')";
                 using (OracleCommand cmd = new OracleCommand(query, con))
                 {
                     using (OracleDataAdapter adapter = new OracleDataAdapter(cmd))
@@ -126,12 +126,12 @@ namespace QuanTriTrongOracle.TabGVU
                     // Thực thi truy vấn
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Cập nhật thông tin học phần thành công.");
+                    MessageBox.Show("Cập nhật thông tin phân công thành công.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi cập nhật thông tin học phần: " + ex.Message);
+                MessageBox.Show("Lỗi khi cập nhật thông tin phân công: " + ex.Message);
             }
             finally
             {
@@ -140,6 +140,27 @@ namespace QuanTriTrongOracle.TabGVU
                 {
                     con.Close();
                 }
+            }
+        }
+
+        private void PCUpdDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                MessageBox.Show("BẠN CHỌN DÒNG " + e.RowIndex.ToString());
+                // Lấy dòng được chọn từ DataGridView
+                DataGridViewRow row = PCUpdDataGrid.Rows[e.RowIndex];
+                oldMaGVPC = row.Cells["MAGV"].Value.ToString();
+                oldMaHPPC = row.Cells["MAHP"].Value.ToString();
+                oldHKPC = Convert.ToInt32(row.Cells["HK"].Value);
+                oldNamPC = Convert.ToInt32(row.Cells["NAM"].Value);
+                oldMaCTPC = row.Cells["MACT"].Value.ToString();
+
+                MaGVPCUpdTxt.Text = oldMaGVPC;
+                MaHPPCUpdTxt.Text = oldMaHPPC;
+                HKPCUpdTxt.Text = oldHKPC.ToString();
+                NamPCUpdTxt.Text = oldNamPC.ToString();
+                MaCTPCUpdTxt.Text = oldMaCTPC;
             }
         }
     }

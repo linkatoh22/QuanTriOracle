@@ -160,7 +160,8 @@ END;
 /
 CREATE OR REPLACE PROCEDURE PROC_THEMDONVI (
     p_MADV IN VARCHAR2,
-    p_TENDV IN VARCHAR2
+    p_TENDV IN VARCHAR2,
+    p_COSO IN VARCHAR2
 )
 IS
     v_Count NUMBER;
@@ -177,15 +178,16 @@ BEGIN
     END IF;
 
     -- N?u MSSV ch?a t?n t?i, th�m sinh vi�n v�o b?ng SinhVien
-    INSERT INTO DONVI (MADV, TENDV) VALUES 
-    (p_MADV, p_TENDV);
+    INSERT INTO DONVI (MADV, TENDV, COSO) VALUES 
+    (p_MADV, p_TENDV, p_COSO);
     
     COMMIT;
 END;
 /
 CREATE OR REPLACE PROCEDURE PROC_UPDATEDONVI (
     p_MADV IN VARCHAR2,
-    p_TENDV IN VARCHAR2
+    p_TENDV IN VARCHAR2,
+    p_COSO IN VARCHAR2
 )
 IS
     v_Count NUMBER;
@@ -203,7 +205,8 @@ BEGIN
     END IF;
     -- C?p nh?t th�ng tin c?a ??n v?
     UPDATE DONVI
-    SET TENDV = p_TENDV
+    SET TENDV = p_TENDV,
+        COSO = p_COSO
     WHERE MADV = p_MADV;
     
     COMMIT;

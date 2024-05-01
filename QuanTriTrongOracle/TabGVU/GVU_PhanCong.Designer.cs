@@ -210,6 +210,7 @@
             this.PCUpdDataGrid.RowTemplate.Height = 24;
             this.PCUpdDataGrid.Size = new System.Drawing.Size(843, 193);
             this.PCUpdDataGrid.TabIndex = 82;
+            this.PCUpdDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PCUpdDataGrid_CellContentClick);
             // 
             // GVU_PhanCong
             // 

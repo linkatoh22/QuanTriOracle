@@ -469,6 +469,9 @@
     <EmbeddedResource Include="TabGVU\GVU_KHMo.resx">
       <DependentUpon>GVU_KHMo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TabGVU\GVU_PhanCong.resx">
+      <DependentUpon>GVU_PhanCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TabGVU\GVU_SinhVien.resx">
       <DependentUpon>GVU_SinhVien.cs</DependentUpon>
     </EmbeddedResource>

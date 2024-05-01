@@ -244,3 +244,4 @@ C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTr
 C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_DonVi.resources
 C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_SinhVien.resources
 C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_KHMo.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_PhanCong.resources
