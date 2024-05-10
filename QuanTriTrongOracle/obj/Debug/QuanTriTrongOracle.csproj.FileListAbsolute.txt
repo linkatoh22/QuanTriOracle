@@ -103,63 +103,221 @@ E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\Qu
 E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_KHMO.resources
 E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_SinhVien.resources
 E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavSC.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.exe.config
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.exe
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.pdb
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.SqlServer.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Oracle.ManagedDataAccess.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Buffers.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Formats.Asn1.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Memory.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Numerics.Vectors.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Encodings.Web.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Json.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.ValueTuple.dll
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.SqlServer.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Buffers.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Formats.Asn1.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Memory.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Numerics.Vectors.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Encodings.Web.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Json.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.ValueTuple.xml
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.AssemblyReference.cache
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.SuggestedBindingRedirects.cache
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavForm.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.DangNhap.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavNVCB.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavSC.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Properties.Resources.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_Dvi.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_HocPhan.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_KHMO.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_NhanSu.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_SinhVien.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_DangKy.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_HocPhan.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_KHMO.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_SinhVien.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.DetailUser.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.EditUserRole.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.PhanQuyen.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.ThuHoiQuyen.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.XemPriv.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.XemUser.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.GenerateResource.cache
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.CoreCompileInputs.cache
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.CopyComplete
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.exe
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.pdb
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavGVU.resources
-C:\HCMUS\NAM3\hk2\ATBM\latest ph2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTK.resources
-E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTK.resources
-E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavGVU.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.exe.config
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.exe
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.pdb
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Formats.Asn1.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Json.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Formats.Asn1.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Json.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavForm.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.DangNhap.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavNVCB.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavSC.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Properties.Resources.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_Dvi.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_HocPhan.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_KHMO.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_NhanSu.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_SinhVien.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_DangKy.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_HocPhan.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_KHMO.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_SinhVien.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.DetailUser.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.EditUserRole.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.PhanQuyen.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.ThuHoiQuyen.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.XemPriv.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.XemUser.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.GenerateResource.cache
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.CopyComplete
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.exe
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.pdb
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavGV.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGV.GV_DangKy.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTDV.TDV_DangKy.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTDV.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTDV.TDV_PCHP.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavGV.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTDV.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTDV.TDV_DangKy.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGV.GV_DangKy.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTDV.TDV_PCHP.resources
+C:\Users\User\Desktop\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavAD.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavAD.resources
+E:\CLG\HK2-Y3\Winform-AT\PHAN HE 2\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Noti.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.AssemblyReference.cache
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.SuggestedBindingRedirects.cache
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavAD.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavForm.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.DangNhap.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavGV.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Nav_GVU2.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavNVCB.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavSC.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTDV.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Noti.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Properties.Resources.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTDV.TDV_DangKy.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGV.GV_DangKy.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_Dvi.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_HocPhan.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_KHMO.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_NhanSu.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_SinhVien.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_DangKy.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_HocPhan.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_KHMO.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_SinhVien.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTDV.TDV_PCHP.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.DetailUser.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.EditUserRole.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.PhanQuyen.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.ThuHoiQuyen.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.XemPriv.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.XemUser.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.GenerateResource.cache
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.CoreCompileInputs.cache
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.exe
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.pdb
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.exe.config
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.exe
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.pdb
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.SqlServer.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Buffers.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Formats.Asn1.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Memory.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Numerics.Vectors.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Encodings.Web.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Json.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.ValueTuple.dll
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.SqlServer.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Buffers.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Formats.Asn1.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Memory.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Numerics.Vectors.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Encodings.Web.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Json.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.ValueTuple.xml
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.CopyComplete
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTK.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTK2.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTK.TK_All.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTK.TK_NhanSu.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTK.TK_PhanCong.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_DonVi.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_SinhVien.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_KHMo.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_PhanCong.resources
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_DangKy.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.exe.config
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.exe
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\QuanTriTrongOracle.pdb
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Buffers.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Formats.Asn1.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Memory.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Json.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.ValueTuple.dll
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Buffers.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Formats.Asn1.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Memory.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Text.Json.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\bin\Debug\System.ValueTuple.xml
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.AssemblyReference.cache
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavAD.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavForm.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.DangNhap.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavGV.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Nav_GVU2.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavNVCB.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavSC.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTDV.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTK.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.NavTK2.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Noti.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Properties.Resources.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_DangKy.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_DonVi.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_KHMo.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_PhanCong.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_SinhVien.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTDV.TDV_DangKy.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGV.GV_DangKy.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_Dvi.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_HocPhan.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_KHMO.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_NhanSu.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabNVCB.NVCB_SinhVien.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_DangKy.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_HocPhan.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_KHMO.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabSC.SC_SinhVien.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTDV.TDV_PCHP.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTK.TK_All.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTK.TK_NhanSu.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabTK.TK_PhanCong.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.DetailUser.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.EditUserRole.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.PhanQuyen.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.ThuHoiQuyen.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.XemPriv.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.Tab.XemUser.resources
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.GenerateResource.cache
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.CoreCompileInputs.cache
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.csproj.CopyComplete
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.exe
+C:\Users\User\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.pdb
+C:\HCMUS\NAM3\hk2\ATBM\ph2_284\QuanTriOracle\QuanTriTrongOracle\obj\Debug\QuanTriTrongOracle.TabGVU.GVU_HocPhan.resources

@@ -54,7 +54,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.Upd_Role = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.mssvUpdTxt = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.edit_role = new System.Windows.Forms.TextBox();
             this.edt_usr = new System.Windows.Forms.ComboBox();
@@ -312,14 +312,14 @@
             this.label14.TabIndex = 38;
             this.label14.Text = "Mật khẩu";
             // 
-            // label15
+            // mssvUpdTxt
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(612, 404);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 13);
-            this.label15.TabIndex = 37;
-            this.label15.Text = "Role Name";
+            this.mssvUpdTxt.AutoSize = true;
+            this.mssvUpdTxt.Location = new System.Drawing.Point(612, 404);
+            this.mssvUpdTxt.Name = "mssvUpdTxt";
+            this.mssvUpdTxt.Size = new System.Drawing.Size(60, 13);
+            this.mssvUpdTxt.TabIndex = 37;
+            this.mssvUpdTxt.Text = "Role Name";
             // 
             // label16
             // 
@@ -374,7 +374,7 @@
             this.Controls.Add(this.edt_usr);
             this.Controls.Add(this.Upd_Role);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.mssvUpdTxt);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.edit_role);
             this.Controls.Add(this.Upd_User);
@@ -438,7 +438,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button Upd_Role;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label mssvUpdTxt;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox edit_role;
         private System.Windows.Forms.ComboBox edt_usr;

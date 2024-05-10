@@ -76,6 +76,10 @@
             this.label63 = new System.Windows.Forms.Label();
             this.PCUpdDataGrid = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.delNSBtn = new System.Windows.Forms.Button();
+            this.MaNVDelTxt = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.LoadNSBtn = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
             this.NSDataGrid = new System.Windows.Forms.DataGridView();
@@ -84,6 +88,7 @@
             this.VaiTroUpdTxt = new System.Windows.Forms.TextBox();
             this.PhoneUpdTxt = new System.Windows.Forms.TextBox();
             this.PhuCapUpdTxt = new System.Windows.Forms.TextBox();
+            this.BirthUpdTxt = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.FMaleUpdRad = new System.Windows.Forms.RadioButton();
             this.MaleUpdRad = new System.Windows.Forms.RadioButton();
@@ -119,17 +124,12 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.BirthUpdTxt = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.delNSBtn = new System.Windows.Forms.Button();
-            this.MaNVDelTxt = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label36 = new System.Windows.Forms.Label();
-            this.TableNameCB = new System.Windows.Forms.ComboBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.LoadTableBtn = new System.Windows.Forms.Button();
             this.TableDataGrid = new System.Windows.Forms.DataGridView();
+            this.LoadTableBtn = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
+            this.TableNameCB = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HPPCDataGrid)).BeginInit();
@@ -152,7 +152,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(998, 1055);
+            this.tabControl1.Size = new System.Drawing.Size(1009, 1055);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -206,7 +206,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(990, 1026);
+            this.tabPage1.Size = new System.Drawing.Size(1001, 1026);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Phân công";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -667,6 +667,43 @@
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // delNSBtn
+            // 
+            this.delNSBtn.Location = new System.Drawing.Point(324, 929);
+            this.delNSBtn.Name = "delNSBtn";
+            this.delNSBtn.Size = new System.Drawing.Size(103, 23);
+            this.delNSBtn.TabIndex = 97;
+            this.delNSBtn.Text = "Delete";
+            this.delNSBtn.UseVisualStyleBackColor = true;
+            this.delNSBtn.Click += new System.EventHandler(this.delNSBtn_Click);
+            // 
+            // MaNVDelTxt
+            // 
+            this.MaNVDelTxt.Location = new System.Drawing.Point(167, 930);
+            this.MaNVDelTxt.Name = "MaNVDelTxt";
+            this.MaNVDelTxt.Size = new System.Drawing.Size(129, 22);
+            this.MaNVDelTxt.TabIndex = 96;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(110, 933);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(51, 16);
+            this.label24.TabIndex = 95;
+            this.label24.Text = "Mã NV ";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(110, 881);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(134, 25);
+            this.label23.TabIndex = 94;
+            this.label23.Text = "Xóa nhân sự";
+            // 
             // LoadNSBtn
             // 
             this.LoadNSBtn.Location = new System.Drawing.Point(725, 16);
@@ -736,6 +773,13 @@
             this.PhuCapUpdTxt.Name = "PhuCapUpdTxt";
             this.PhuCapUpdTxt.Size = new System.Drawing.Size(230, 22);
             this.PhuCapUpdTxt.TabIndex = 82;
+            // 
+            // BirthUpdTxt
+            // 
+            this.BirthUpdTxt.Location = new System.Drawing.Point(498, 661);
+            this.BirthUpdTxt.Name = "BirthUpdTxt";
+            this.BirthUpdTxt.Size = new System.Drawing.Size(145, 22);
+            this.BirthUpdTxt.TabIndex = 81;
             // 
             // groupBox1
             // 
@@ -1051,50 +1095,6 @@
             this.label34.TabIndex = 50;
             this.label34.Text = "Thêm nhân sự";
             // 
-            // BirthUpdTxt
-            // 
-            this.BirthUpdTxt.Location = new System.Drawing.Point(498, 661);
-            this.BirthUpdTxt.Name = "BirthUpdTxt";
-            this.BirthUpdTxt.Size = new System.Drawing.Size(145, 22);
-            this.BirthUpdTxt.TabIndex = 81;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(110, 881);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(134, 25);
-            this.label23.TabIndex = 94;
-            this.label23.Text = "Xóa nhân sự";
-            // 
-            // delNSBtn
-            // 
-            this.delNSBtn.Location = new System.Drawing.Point(324, 929);
-            this.delNSBtn.Name = "delNSBtn";
-            this.delNSBtn.Size = new System.Drawing.Size(103, 23);
-            this.delNSBtn.TabIndex = 97;
-            this.delNSBtn.Text = "Delete";
-            this.delNSBtn.UseVisualStyleBackColor = true;
-            this.delNSBtn.Click += new System.EventHandler(this.delNSBtn_Click);
-            // 
-            // MaNVDelTxt
-            // 
-            this.MaNVDelTxt.Location = new System.Drawing.Point(167, 930);
-            this.MaNVDelTxt.Name = "MaNVDelTxt";
-            this.MaNVDelTxt.Size = new System.Drawing.Size(129, 22);
-            this.MaNVDelTxt.TabIndex = 96;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(110, 933);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(51, 16);
-            this.label24.TabIndex = 95;
-            this.label24.Text = "Mã NV ";
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.TableDataGrid);
@@ -1111,34 +1111,16 @@
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // label36
+            // TableDataGrid
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(41, 43);
-            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(264, 25);
-            this.label36.TabIndex = 93;
-            this.label36.Text = "Chọn bảng để xem dữ liệu";
-            // 
-            // TableNameCB
-            // 
-            this.TableNameCB.FormattingEnabled = true;
-            this.TableNameCB.Location = new System.Drawing.Point(138, 85);
-            this.TableNameCB.Name = "TableNameCB";
-            this.TableNameCB.Size = new System.Drawing.Size(121, 24);
-            this.TableNameCB.TabIndex = 94;
-            this.TableNameCB.SelectedIndexChanged += new System.EventHandler(this.TableNameCB_SelectedIndexChanged);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(64, 88);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(68, 16);
-            this.label37.TabIndex = 95;
-            this.label37.Text = "Tên bảng:";
+            this.TableDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TableDataGrid.Location = new System.Drawing.Point(46, 138);
+            this.TableDataGrid.Name = "TableDataGrid";
+            this.TableDataGrid.RowHeadersWidth = 51;
+            this.TableDataGrid.RowTemplate.Height = 24;
+            this.TableDataGrid.Size = new System.Drawing.Size(896, 306);
+            this.TableDataGrid.TabIndex = 97;
+            this.TableDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TableDataGrid_CellContentClick);
             // 
             // LoadTableBtn
             // 
@@ -1150,25 +1132,44 @@
             this.LoadTableBtn.UseVisualStyleBackColor = true;
             this.LoadTableBtn.Click += new System.EventHandler(this.LoadTableBtn_Click);
             // 
-            // TableDataGrid
+            // label37
             // 
-            this.TableDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TableDataGrid.Location = new System.Drawing.Point(46, 138);
-            this.TableDataGrid.Name = "TableDataGrid";
-            this.TableDataGrid.RowHeadersWidth = 51;
-            this.TableDataGrid.RowTemplate.Height = 24;
-            this.TableDataGrid.Size = new System.Drawing.Size(896, 306);
-            this.TableDataGrid.TabIndex = 97;
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(64, 88);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(68, 16);
+            this.label37.TabIndex = 95;
+            this.label37.Text = "Tên bảng:";
+            // 
+            // TableNameCB
+            // 
+            this.TableNameCB.FormattingEnabled = true;
+            this.TableNameCB.Location = new System.Drawing.Point(138, 85);
+            this.TableNameCB.Name = "TableNameCB";
+            this.TableNameCB.Size = new System.Drawing.Size(121, 24);
+            this.TableNameCB.TabIndex = 94;
+            this.TableNameCB.SelectedIndexChanged += new System.EventHandler(this.TableNameCB_SelectedIndexChanged);
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(41, 43);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(264, 25);
+            this.label36.TabIndex = 93;
+            this.label36.Text = "Chọn bảng để xem dữ liệu";
             // 
             // NavTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(998, 1055);
+            this.ClientSize = new System.Drawing.Size(1009, 1055);
             this.Controls.Add(this.tabControl1);
             this.Name = "NavTK";
-            this.Text = "NavGV";
+            this.Text = "NavTK";
             this.Load += new System.EventHandler(this.NavGV_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

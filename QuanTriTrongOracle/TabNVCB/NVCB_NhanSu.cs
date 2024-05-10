@@ -64,8 +64,6 @@ namespace QuanTriTrongOracle.TabNVCB
             MessageBox.Show("Update số điện thoại thành công");
             con.Close();
             updateGrid();
-            
-            
         }
     }
 }

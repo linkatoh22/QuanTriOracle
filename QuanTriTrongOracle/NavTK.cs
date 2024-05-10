@@ -643,5 +643,10 @@ namespace QuanTriTrongOracle
         {
 
         }
+
+        private void TableDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

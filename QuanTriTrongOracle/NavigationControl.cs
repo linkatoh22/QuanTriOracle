@@ -19,13 +19,23 @@ namespace QuanTriTrongOracle
         }
         private void AddUserControl()
         {
-            for (int i=0;i<userControlList.Count();i++)
+            for (int i = 0; i < userControlList.Count(); i++)
             {
-                //set every control dock style to fill
-                userControlList[i].Dock = DockStyle.Fill;
-                panel.Controls.Add(userControlList[i]);
+                // Kiểm tra xem UserControl đã được khởi tạo chưa
+                if (userControlList[i] != null)
+                {
+                    //set every control dock style to fill
+                    userControlList[i].Dock = DockStyle.Fill;
+                    panel.Controls.Add(userControlList[i]);
+                }
+                else
+                {
+                    // Xuất thông báo hoặc xử lý lỗi nếu cần thiết
+                    MessageBox.Show($"UserControl at index {i} is null.");
+                }
             }
         }
+
         public void Display(int index)
         {
             if(index<userControlList.Count())
